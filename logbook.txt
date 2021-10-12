@@ -1,1 +1,3 @@
 10/12/2021 10:15 - JBW created HPC directory, sub-directories, & this log file
+10/12/2021 11:30 - JBW merged HPC directories with github repo (after much struggle)
+
