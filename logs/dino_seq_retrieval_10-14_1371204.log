@@ -1,0 +1,514 @@
+2021-10-14T18:41:19 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.66.60) 
+2021-10-14T18:41:19 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:41:20 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.66.60) 
+2021-10-14T18:41:20 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:41:20 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.66.60) 
+2021-10-14T18:41:20 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:41:20 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.66.60) 
+2021-10-14T18:41:20 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.66.60) 
+2021-10-14T18:41:20 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.66.60) 
+2021-10-14T18:41:20 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.66.60) 
+2021-10-14T18:41:20 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.66.60) 
+2021-10-14T18:41:20 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.66.60) 
+2021-10-14T18:41:20 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:41:20 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:41:20 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:41:20 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:41:20 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:41:20 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:41:30 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.85.139) 
+2021-10-14T18:41:30 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:41:38 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.107.204) 
+2021-10-14T18:41:38 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:41:48 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.8.27) 
+2021-10-14T18:41:48 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:41:56 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.173.241) 
+2021-10-14T18:41:56 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:42:05 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.173.209) 
+2021-10-14T18:42:05 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:42:13 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.146.59) 
+2021-10-14T18:42:13 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:42:21 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.139.211) 
+2021-10-14T18:42:21 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:42:32 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.89.67) 
+2021-10-14T18:42:32 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:42:40 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.251.164) 
+2021-10-14T18:42:40 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:42:47 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.109.179) 
+2021-10-14T18:42:48 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:42:59 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.98.92) 
+2021-10-14T18:42:59 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:43:07 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.141.28) 
+2021-10-14T18:43:07 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:43:16 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.153.116) 
+2021-10-14T18:43:16 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:43:24 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.41.140) 
+2021-10-14T18:43:24 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:43:33 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.85.27) 
+2021-10-14T18:43:33 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:43:40 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.0.252) 
+2021-10-14T18:43:40 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:43:49 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.81.100) 
+2021-10-14T18:43:49 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:43:58 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.202.233) 
+2021-10-14T18:43:58 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:44:09 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.8.251) 
+2021-10-14T18:44:09 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:44:17 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.76.140) 
+2021-10-14T18:44:17 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:44:25 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.197.57) 
+2021-10-14T18:44:25 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:44:32 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.145.75) 
+2021-10-14T18:44:32 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:44:41 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.106.180) 
+2021-10-14T18:44:41 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:44:51 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.111.91) 
+2021-10-14T18:44:51 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:45:00 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.134.217) 
+2021-10-14T18:45:00 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:45:07 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.159.41) 
+2021-10-14T18:45:07 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:45:14 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.19.80) 
+2021-10-14T18:45:14 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+spots read      : 10,701,173
+reads read      : 21,402,346
+reads written   : 21,402,346
+2021-10-14T18:45:25 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.139.177) 
+2021-10-14T18:45:25 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:45:26 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.139.177) 
+2021-10-14T18:45:26 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:45:27 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.139.177) 
+2021-10-14T18:45:27 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:45:27 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.139.177) 
+2021-10-14T18:45:27 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.139.177) 
+2021-10-14T18:45:27 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.139.177) 
+2021-10-14T18:45:27 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.139.177) 
+2021-10-14T18:45:27 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.139.177) 
+2021-10-14T18:45:27 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.139.177) 
+2021-10-14T18:45:27 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:45:27 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:45:27 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:45:27 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:45:27 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:45:27 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:45:41 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.104.67) 
+2021-10-14T18:45:41 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:45:51 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.17.196) 
+2021-10-14T18:45:51 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:45:59 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.101.171) 
+2021-10-14T18:45:59 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:46:07 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.193.113) 
+2021-10-14T18:46:07 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:46:15 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.91.44) 
+2021-10-14T18:46:15 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:46:23 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.152.212) 
+2021-10-14T18:46:23 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:46:35 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.142.177) 
+2021-10-14T18:46:35 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:46:46 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.114.11) 
+2021-10-14T18:46:46 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:46:54 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.65.164) 
+2021-10-14T18:46:54 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:47:02 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.76.84) 
+2021-10-14T18:47:02 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:47:10 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.203.161) 
+2021-10-14T18:47:10 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:47:18 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.87.156) 
+2021-10-14T18:47:18 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:47:26 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.240.36) 
+2021-10-14T18:47:26 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:47:33 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.84.195) 
+2021-10-14T18:47:33 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:47:42 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.167.209) 
+2021-10-14T18:47:42 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:47:50 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.97.123) 
+2021-10-14T18:47:50 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:47:58 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.245.124) 
+2021-10-14T18:47:58 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:48:06 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.140.89) 
+2021-10-14T18:48:06 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:48:14 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.170.57) 
+2021-10-14T18:48:14 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:48:22 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.196.217) 
+2021-10-14T18:48:22 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:48:29 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.245.52) 
+2021-10-14T18:48:29 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:48:37 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.37.156) 
+2021-10-14T18:48:37 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:48:44 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.228.81) 
+2021-10-14T18:48:44 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:48:52 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.98.36) 
+2021-10-14T18:48:52 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:49:00 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.135.27) 
+2021-10-14T18:49:00 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:49:07 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.105.100) 
+2021-10-14T18:49:07 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:49:17 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.85.204) 
+2021-10-14T18:49:17 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:49:26 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.137.177) 
+2021-10-14T18:49:26 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:49:33 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.78.36) 
+2021-10-14T18:49:33 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:49:42 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.248.20) 
+2021-10-14T18:49:42 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+spots read      : 12,190,915
+reads read      : 24,381,830
+reads written   : 24,381,830
+2021-10-14T18:50:00 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.0.220) 
+2021-10-14T18:50:00 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:50:01 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.0.220) 
+2021-10-14T18:50:01 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:50:01 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.0.220) 
+2021-10-14T18:50:01 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:50:02 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.0.220) 
+2021-10-14T18:50:02 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.0.220) 
+2021-10-14T18:50:02 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.0.220) 
+2021-10-14T18:50:02 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.0.220) 
+2021-10-14T18:50:02 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.0.220) 
+2021-10-14T18:50:02 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.0.220) 
+2021-10-14T18:50:02 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:50:02 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:50:02 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:50:02 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:50:02 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:50:02 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:50:15 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.170.11) 
+2021-10-14T18:50:15 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:50:23 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.162.105) 
+2021-10-14T18:50:23 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:50:32 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.168.161) 
+2021-10-14T18:50:33 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:50:40 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.163.107) 
+2021-10-14T18:50:40 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:50:48 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.233.99) 
+2021-10-14T18:50:48 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:50:57 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.108.156) 
+2021-10-14T18:50:57 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:51:09 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.163.217) 
+2021-10-14T18:51:10 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:51:17 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.98.4) 
+2021-10-14T18:51:17 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:51:25 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.137.188) 
+2021-10-14T18:51:25 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:51:34 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.136.177) 
+2021-10-14T18:51:34 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:51:41 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.129.115) 
+2021-10-14T18:51:41 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:51:49 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.147.132) 
+2021-10-14T18:51:49 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:51:56 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.152.204) 
+2021-10-14T18:51:56 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:52:05 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.96.92) 
+2021-10-14T18:52:05 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:52:14 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.128.227) 
+2021-10-14T18:52:14 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:52:22 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.16.160) 
+2021-10-14T18:52:22 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:52:31 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.171.249) 
+2021-10-14T18:52:31 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:52:39 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.232.43) 
+2021-10-14T18:52:39 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:52:47 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.206.195) 
+2021-10-14T18:52:47 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:52:54 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.95.75) 
+2021-10-14T18:52:54 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:53:01 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.163.9) 
+2021-10-14T18:53:01 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:53:10 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.174.185) 
+2021-10-14T18:53:10 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:53:17 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.101.43) 
+2021-10-14T18:53:17 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:53:27 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.93.147) 
+2021-10-14T18:53:27 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:53:35 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.84.188) 
+2021-10-14T18:53:35 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:53:43 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.12.132) 
+2021-10-14T18:53:43 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:53:50 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.88.132) 
+2021-10-14T18:53:51 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:53:58 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.75.108) 
+2021-10-14T18:53:58 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:54:06 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.201.89) 
+2021-10-14T18:54:06 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:54:14 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.192.97) 
+2021-10-14T18:54:14 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:54:23 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.141.4) 
+2021-10-14T18:54:23 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:54:30 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.72.228) 
+2021-10-14T18:54:30 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:54:38 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.167.177) 
+2021-10-14T18:54:38 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+spots read      : 13,245,333
+reads read      : 26,490,666
+reads written   : 26,490,666
+2021-10-14T18:54:56 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.193.233) 
+2021-10-14T18:54:56 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:54:57 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.193.233) 
+2021-10-14T18:54:57 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:54:57 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.193.233) 
+2021-10-14T18:54:57 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:54:57 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.193.233) 
+2021-10-14T18:54:57 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.193.233) 
+2021-10-14T18:54:57 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.193.233) 
+2021-10-14T18:54:57 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.193.233) 
+2021-10-14T18:54:57 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.193.233) 
+2021-10-14T18:54:57 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.193.233) 
+2021-10-14T18:54:57 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:54:57 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:54:57 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:54:57 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:54:57 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:54:57 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:55:11 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.139.123) 
+2021-10-14T18:55:12 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:55:20 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.133.195) 
+2021-10-14T18:55:20 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:55:27 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.143.4) 
+2021-10-14T18:55:27 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:55:35 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.228.168) 
+2021-10-14T18:55:35 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:55:44 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.44.52) 
+2021-10-14T18:55:44 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:55:52 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.68.204) 
+2021-10-14T18:55:52 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:55:59 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.105.148) 
+2021-10-14T18:55:59 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:56:11 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.178.155) 
+2021-10-14T18:56:11 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:56:24 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.142.249) 
+2021-10-14T18:56:24 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:56:32 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.34.20) 
+2021-10-14T18:56:32 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:56:40 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.244.252) 
+2021-10-14T18:56:40 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:56:48 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.140.196) 
+2021-10-14T18:56:48 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:56:56 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.174.137) 
+2021-10-14T18:56:56 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:57:04 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.130.75) 
+2021-10-14T18:57:04 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:57:12 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.164.227) 
+2021-10-14T18:57:12 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:57:20 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.225.193) 
+2021-10-14T18:57:20 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:57:28 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.16.8) 
+2021-10-14T18:57:28 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:57:36 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.201.249) 
+2021-10-14T18:57:36 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:57:44 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.47.12) 
+2021-10-14T18:57:44 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:57:52 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.97.92) 
+2021-10-14T18:57:53 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:58:01 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.37.196) 
+2021-10-14T18:58:01 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:58:08 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.105.115) 
+2021-10-14T18:58:08 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:58:20 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.171.201) 
+2021-10-14T18:58:20 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:58:28 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.201.17) 
+2021-10-14T18:58:28 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:58:40 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.99.196) 
+2021-10-14T18:58:40 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:58:47 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.200.201) 
+2021-10-14T18:58:47 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:58:55 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.85.156) 
+2021-10-14T18:58:55 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:59:02 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.12.108) 
+2021-10-14T18:59:02 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:59:10 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.161.145) 
+2021-10-14T18:59:10 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:59:21 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.163.177) 
+2021-10-14T18:59:21 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:59:28 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.206.171) 
+2021-10-14T18:59:28 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:59:35 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.130.49) 
+2021-10-14T18:59:35 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:59:42 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.24.252) 
+2021-10-14T18:59:42 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:59:49 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.1.84) 
+2021-10-14T18:59:49 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T18:59:57 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.66.156) 
+2021-10-14T18:59:57 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:00:06 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.84.172) 
+2021-10-14T19:00:06 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:00:14 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.170.41) 
+2021-10-14T19:00:15 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+spots read      : 14,579,573
+reads read      : 29,159,146
+reads written   : 29,159,146
+2021-10-14T19:00:28 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.196.97) 
+2021-10-14T19:00:28 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:00:28 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.196.97) 
+2021-10-14T19:00:29 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:00:29 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.196.97) 
+2021-10-14T19:00:29 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:00:29 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.196.97) 
+2021-10-14T19:00:29 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.196.97) 
+2021-10-14T19:00:29 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.196.97) 
+2021-10-14T19:00:29 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.196.97) 
+2021-10-14T19:00:29 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.196.97) 
+2021-10-14T19:00:29 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.196.97) 
+2021-10-14T19:00:29 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:00:29 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:00:29 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:00:29 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:00:29 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:00:29 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:00:38 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.187.91) 
+2021-10-14T19:00:38 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:00:46 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.200.209) 
+2021-10-14T19:00:46 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:00:55 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.104.188) 
+2021-10-14T19:00:55 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:01:04 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.78.84) 
+2021-10-14T19:01:04 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:01:12 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.39.4) 
+2021-10-14T19:01:12 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:01:20 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.105.91) 
+2021-10-14T19:01:20 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:01:29 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.154.132) 
+2021-10-14T19:01:29 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:01:37 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.246.44) 
+2021-10-14T19:01:37 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:01:45 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.172.121) 
+2021-10-14T19:01:45 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:01:54 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.201.73) 
+2021-10-14T19:01:54 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:02:03 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.192.193) 
+2021-10-14T19:02:03 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:02:15 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.244.252) 
+2021-10-14T19:02:15 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:02:23 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.77.172) 
+2021-10-14T19:02:23 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:02:33 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.76.164) 
+2021-10-14T19:02:33 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:02:42 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.16.216) 
+2021-10-14T19:02:42 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:02:50 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.200.235) 
+2021-10-14T19:02:50 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:02:58 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.134.65) 
+2021-10-14T19:02:58 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:03:06 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.12.76) 
+2021-10-14T19:03:06 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:03:13 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.129.59) 
+2021-10-14T19:03:13 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:03:22 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.77.172) 
+2021-10-14T19:03:22 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:03:29 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.160.217) 
+2021-10-14T19:03:29 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:03:38 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.170.169) 
+2021-10-14T19:03:38 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:03:47 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.46.140) 
+2021-10-14T19:03:47 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:03:54 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.159.33) 
+2021-10-14T19:03:54 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:04:02 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.20.80) 
+2021-10-14T19:04:02 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:04:10 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.178.219) 
+2021-10-14T19:04:10 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:04:22 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.40.20) 
+2021-10-14T19:04:22 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:04:30 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.38.60) 
+2021-10-14T19:04:30 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:04:38 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.142.49) 
+2021-10-14T19:04:38 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:04:46 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.113.203) 
+2021-10-14T19:04:46 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:04:55 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.72.252) 
+2021-10-14T19:04:55 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:05:04 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.200.241) 
+2021-10-14T19:05:04 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:05:11 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.80.216) 
+2021-10-14T19:05:11 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:05:23 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.102.156) 
+2021-10-14T19:05:23 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:05:32 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.132.41) 
+2021-10-14T19:05:32 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:05:40 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.204.65) 
+2021-10-14T19:05:40 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:05:48 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.168.251) 
+2021-10-14T19:05:48 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:05:56 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.153.148) 
+2021-10-14T19:05:56 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+spots read      : 15,037,276
+reads read      : 30,074,552
+reads written   : 30,074,552
+2021-10-14T19:06:13 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.76.60) 
+2021-10-14T19:06:13 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:06:13 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.76.60) 
+2021-10-14T19:06:13 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:06:14 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.76.60) 
+2021-10-14T19:06:14 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:06:14 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.76.60) 
+2021-10-14T19:06:14 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.76.60) 
+2021-10-14T19:06:14 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.76.60) 
+2021-10-14T19:06:14 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.76.60) 
+2021-10-14T19:06:14 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.76.60) 
+2021-10-14T19:06:14 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.76.60) 
+2021-10-14T19:06:14 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:06:14 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:06:14 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:06:14 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:06:14 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:06:14 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:06:28 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.15.36) 
+2021-10-14T19:06:28 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:06:38 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.141.124) 
+2021-10-14T19:06:38 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:06:48 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.161.185) 
+2021-10-14T19:06:48 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:07:00 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.194.65) 
+2021-10-14T19:07:00 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:07:11 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.162.137) 
+2021-10-14T19:07:11 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:07:18 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.9.155) 
+2021-10-14T19:07:18 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:07:27 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.48.28) 
+2021-10-14T19:07:27 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:07:38 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.95.187) 
+2021-10-14T19:07:38 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:07:45 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.168.153) 
+2021-10-14T19:07:45 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:07:53 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.96.28) 
+2021-10-14T19:07:53 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:08:01 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.130.209) 
+2021-10-14T19:08:01 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:08:09 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.141.164) 
+2021-10-14T19:08:09 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:08:17 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.142.188) 
+2021-10-14T19:08:17 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:08:26 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.166.145) 
+2021-10-14T19:08:26 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:08:34 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.71.204) 
+2021-10-14T19:08:34 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:08:42 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.88.203) 
+2021-10-14T19:08:42 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:08:50 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.140.33) 
+2021-10-14T19:08:50 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:08:58 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.130.241) 
+2021-10-14T19:08:58 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:09:06 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.186.19) 
+2021-10-14T19:09:06 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:09:13 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.172.73) 
+2021-10-14T19:09:13 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:09:21 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.100.180) 
+2021-10-14T19:09:21 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:09:31 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.43.52) 
+2021-10-14T19:09:31 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:09:40 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.133.1) 
+2021-10-14T19:09:40 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:09:50 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.89.196) 
+2021-10-14T19:09:50 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:09:58 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.90.36) 
+2021-10-14T19:09:58 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:10:07 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.147.124) 
+2021-10-14T19:10:07 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:10:15 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.202.185) 
+2021-10-14T19:10:15 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:10:23 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.216.170.179) 
+2021-10-14T19:10:23 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T19:10:31 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.175' to sra-pub-run-odp.s3.amazonaws.com (52.217.104.92) 
+2021-10-14T19:10:31 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+spots read      : 11,541,826
+reads read      : 23,083,652
+reads written   : 23,083,652
