@@ -16,8 +16,9 @@
 #USAGE: sbatch cleaning_scripts/load_seqs.txt cleaning_scripts/seq_access_nums.txt
 #USAGE v2: sbatch cleaning_scripts/load_seqs.txt cleaning_scripts/seq_access_nums_short.txt
 #USAGE v3: sbatch cleaning_scripts/load_seqs.txt cleaning_scripts/seq_access_missing.txt
+# NOTE: files have moved: need to update folder paths
 
 for seq in $(cat ${1})
 do
-	fasterq-dump --split-3 --verbose -O raw_data/sra/ $seq
+	fasterq-dump --split-3 --verbose -O data/sra/ $seq
 done
