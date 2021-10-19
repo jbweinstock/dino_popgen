@@ -1,0 +1,84 @@
+2021-10-14T21:23:17 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.24) 
+2021-10-14T21:23:17 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.25) 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.24) 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.25) 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.25) 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (165.112.9.235) 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (165.112.9.235) 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.25) 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.25) 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.25) 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.24) 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:23:18 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:28:42 fasterq-dump.2.10.0 err: cmn_iter.c cmn_read_String( #3642357 ).VCursorCellDataDirect() -> RC(rcPS,rcCondition,rcWaiting,rcTimeout,rcExhausted) 
+2021-10-14T21:28:42 fasterq-dump.2.10.0 err: cmn_iter.c cmn_read_String( #21385526 ).VCursorCellDataDirect() -> RC(rcPS,rcCondition,rcWaiting,rcTimeout,rcExhausted) 
+2021-10-14T21:28:42 fasterq-dump.2.10.0 err: cmn_iter.c cmn_read_String( #9330137 ).VCursorCellDataDirect() -> RC(rcPS,rcCondition,rcWaiting,rcTimeout,rcExhausted) 
+2021-10-14T21:28:43 fasterq-dump.2.10.0 err: cmn_iter.c cmn_read_String( #27303737 ).VCursorCellDataDirect() -> RC(rcPS,rcCondition,rcWaiting,rcTimeout,rcExhausted) 
+2021-10-14T21:28:43 fasterq-dump.2.10.0 err: cmn_iter.c cmn_read_String( #33297629 ).VCursorCellDataDirect() -> RC(rcPS,rcCondition,rcWaiting,rcTimeout,rcExhausted) 
+2021-10-14T21:28:44 fasterq-dump.2.10.0 err: cmn_iter.c cmn_read_uint8_array( #14615955 ).VCursorCellDataDirect() -> RC(rcPS,rcCondition,rcWaiting,rcTimeout,rcExhausted) 
+2021-10-14T21:28:44 fasterq-dump.2.10.0 err: row #14615955 : READ.len(302) != QUALITY.len(0) (F) 
+2021-10-14T21:28:44 fasterq-dump.2.10.0 fatal: SIGNAL - Segmentation fault 
+2021-10-14T21:28:45 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.24) 
+2021-10-14T21:28:45 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:28:46 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (165.112.9.235) 
+2021-10-14T21:28:46 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:28:46 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (165.112.9.235) 
+2021-10-14T21:28:46 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:28:46 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.25) 
+2021-10-14T21:28:46 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:28:46 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.25) 
+2021-10-14T21:28:46 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:28:47 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.24) 
+2021-10-14T21:28:47 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.25) 
+2021-10-14T21:28:47 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.25) 
+2021-10-14T21:28:47 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.25) 
+2021-10-14T21:28:47 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.24) 
+2021-10-14T21:28:47 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.24) 
+2021-10-14T21:28:47 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:28:47 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:28:47 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:28:47 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:28:47 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:28:47 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:31:48 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (165.112.9.232) 
+2021-10-14T21:31:48 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+spots read      : 28,018,985
+reads read      : 56,037,970
+reads written   : 56,037,970
+2021-10-14T21:32:39 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.24) 
+2021-10-14T21:32:39 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:32:40 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (165.112.9.235) 
+2021-10-14T21:32:40 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:32:40 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (165.112.9.235) 
+2021-10-14T21:32:40 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:32:41 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (165.112.9.232) 
+2021-10-14T21:32:41 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:32:41 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.24) 
+2021-10-14T21:32:41 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:32:41 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (165.112.9.235) 
+2021-10-14T21:32:41 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (165.112.9.235) 
+2021-10-14T21:32:41 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (165.112.9.235) 
+2021-10-14T21:32:41 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (165.112.9.235) 
+2021-10-14T21:32:41 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.24) 
+2021-10-14T21:32:41 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (130.14.250.24) 
+2021-10-14T21:32:41 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:32:41 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:32:41 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:32:41 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:32:41 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T21:32:41 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+2021-10-14T22:02:22 fasterq-dump.2.10.0: KClientHttpOpen - connected from '10.141.0.152' to sra-download.ncbi.nlm.nih.gov (165.112.9.232) 
+2021-10-14T22:02:22 fasterq-dump.2.10.0: KClientHttpOpen - verifying CA cert 
+spots read      : 39,337,453
+reads read      : 78,674,906
+reads written   : 78,674,906
