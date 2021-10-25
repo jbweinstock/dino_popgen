@@ -1,0 +1,1016 @@
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236023_1_out.fasta.gz -p data/trim-data/SRR7236023_2_out.fasta.gz data/sra/SRR7236023_1.fastq.gz data/sra/SRR7236023_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 239.69 s (17 us/read; 3.60 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         14,390,104
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             112,333 (0.8%)
+Pairs written (passing filters):    14,277,771 (99.2%)
+
+Total basepairs processed: 4,317,031,200 bp
+  Read 1: 2,158,515,600 bp
+  Read 2: 2,158,515,600 bp
+Quality-trimmed:              43,226,065 bp (1.0%)
+  Read 1:    34,181,869 bp
+  Read 2:     9,044,196 bp
+Total written (filtered):  4,255,752,831 bp (98.6%)
+  Read 1: 2,120,885,118 bp
+  Read 2: 2,134,867,713 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236038_1_out.fasta.gz -p data/trim-data/SRR7236038_2_out.fasta.gz data/sra/SRR7236038_1.fastq.gz data/sra/SRR7236038_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 212.59 s (17 us/read; 3.62 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         12,817,195
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             112,606 (0.9%)
+Pairs written (passing filters):    12,704,589 (99.1%)
+
+Total basepairs processed: 3,845,158,500 bp
+  Read 1: 1,922,579,250 bp
+  Read 2: 1,922,579,250 bp
+Quality-trimmed:              36,250,384 bp (0.9%)
+  Read 1:    28,252,996 bp
+  Read 2:     7,997,388 bp
+Total written (filtered):  3,791,038,455 bp (98.6%)
+  Read 1: 1,891,025,670 bp
+  Read 2: 1,900,012,785 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236034_1_out.fasta.gz -p data/trim-data/SRR7236034_2_out.fasta.gz data/sra/SRR7236034_1.fastq.gz data/sra/SRR7236034_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 184.10 s (17 us/read; 3.60 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         11,054,898
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:              93,488 (0.8%)
+Pairs written (passing filters):    10,961,410 (99.2%)
+
+Total basepairs processed: 3,316,469,400 bp
+  Read 1: 1,658,234,700 bp
+  Read 2: 1,658,234,700 bp
+Quality-trimmed:              29,830,322 bp (0.9%)
+  Read 1:     6,186,463 bp
+  Read 2:    23,643,859 bp
+Total written (filtered):  3,271,958,392 bp (98.7%)
+  Read 1: 1,640,024,510 bp
+  Read 2: 1,631,933,882 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236033_1_out.fasta.gz -p data/trim-data/SRR7236033_2_out.fasta.gz data/sra/SRR7236033_1.fastq.gz data/sra/SRR7236033_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 277.70 s (17 us/read; 3.63 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         16,820,439
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             125,514 (0.7%)
+Pairs written (passing filters):    16,694,925 (99.3%)
+
+Total basepairs processed: 5,046,131,700 bp
+  Read 1: 2,523,065,850 bp
+  Read 2: 2,523,065,850 bp
+Quality-trimmed:              44,229,896 bp (0.9%)
+  Read 1:    34,424,802 bp
+  Read 2:     9,805,094 bp
+Total written (filtered):  4,982,785,973 bp (98.7%)
+  Read 1: 2,484,945,026 bp
+  Read 2: 2,497,840,947 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236028_1_out.fasta.gz -p data/trim-data/SRR7236028_2_out.fasta.gz data/sra/SRR7236028_1.fastq.gz data/sra/SRR7236028_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 287.42 s (17 us/read; 3.62 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         17,339,044
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             150,533 (0.9%)
+Pairs written (passing filters):    17,188,511 (99.1%)
+
+Total basepairs processed: 5,201,713,200 bp
+  Read 1: 2,600,856,600 bp
+  Read 2: 2,600,856,600 bp
+Quality-trimmed:              46,512,169 bp (0.9%)
+  Read 1:     8,952,393 bp
+  Read 2:    37,559,776 bp
+Total written (filtered):  5,131,492,441 bp (98.7%)
+  Read 1: 2,572,173,593 bp
+  Read 2: 2,559,318,848 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236027_1_out.fasta.gz -p data/trim-data/SRR7236027_2_out.fasta.gz data/sra/SRR7236027_1.fastq.gz data/sra/SRR7236027_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 197.37 s (16 us/read; 3.64 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         11,968,217
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             113,818 (1.0%)
+Pairs written (passing filters):    11,854,399 (99.0%)
+
+Total basepairs processed: 3,590,465,100 bp
+  Read 1: 1,795,232,550 bp
+  Read 2: 1,795,232,550 bp
+Quality-trimmed:              41,300,900 bp (1.2%)
+  Read 1:     8,740,487 bp
+  Read 2:    32,560,413 bp
+Total written (filtered):  3,531,196,949 bp (98.3%)
+  Read 1: 1,771,933,102 bp
+  Read 2: 1,759,263,847 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236030_1_out.fasta.gz -p data/trim-data/SRR7236030_2_out.fasta.gz data/sra/SRR7236030_1.fastq.gz data/sra/SRR7236030_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 229.78 s (17 us/read; 3.59 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         13,739,115
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             153,484 (1.1%)
+Pairs written (passing filters):    13,585,631 (98.9%)
+
+Total basepairs processed: 4,121,734,500 bp
+  Read 1: 2,060,867,250 bp
+  Read 2: 2,060,867,250 bp
+Quality-trimmed:              46,531,150 bp (1.1%)
+  Read 1:    23,028,394 bp
+  Read 2:    23,502,756 bp
+Total written (filtered):  4,052,455,605 bp (98.3%)
+  Read 1: 2,025,932,152 bp
+  Read 2: 2,026,523,453 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236029_1_out.fasta.gz -p data/trim-data/SRR7236029_2_out.fasta.gz data/sra/SRR7236029_1.fastq.gz data/sra/SRR7236029_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 293.59 s (16 us/read; 3.65 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         17,877,353
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             125,473 (0.7%)
+Pairs written (passing filters):    17,751,880 (99.3%)
+
+Total basepairs processed: 5,363,205,900 bp
+  Read 1: 2,681,602,950 bp
+  Read 2: 2,681,602,950 bp
+Quality-trimmed:              44,206,787 bp (0.8%)
+  Read 1:    21,202,606 bp
+  Read 2:    23,004,181 bp
+Total written (filtered):  5,299,539,357 bp (98.8%)
+  Read 1: 2,649,494,908 bp
+  Read 2: 2,650,044,449 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236037_1_out.fasta.gz -p data/trim-data/SRR7236037_2_out.fasta.gz data/sra/SRR7236037_1.fastq.gz data/sra/SRR7236037_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 247.99 s (17 us/read; 3.61 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         14,925,154
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             124,956 (0.8%)
+Pairs written (passing filters):    14,800,198 (99.2%)
+
+Total basepairs processed: 4,477,546,200 bp
+  Read 1: 2,238,773,100 bp
+  Read 2: 2,238,773,100 bp
+Quality-trimmed:              40,864,580 bp (0.9%)
+  Read 1:    32,291,298 bp
+  Read 2:     8,573,282 bp
+Total written (filtered):  4,417,424,938 bp (98.7%)
+  Read 1: 2,203,071,433 bp
+  Read 2: 2,214,353,505 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235996_1_out.fasta.gz -p data/trim-data/SRR7235996_2_out.fasta.gz data/sra/SRR7235996_1.fastq.gz data/sra/SRR7235996_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 224.58 s (17 us/read; 3.59 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         13,428,706
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             107,863 (0.8%)
+Pairs written (passing filters):    13,320,843 (99.2%)
+
+Total basepairs processed: 4,028,611,800 bp
+  Read 1: 2,014,305,900 bp
+  Read 2: 2,014,305,900 bp
+Quality-trimmed:              36,836,802 bp (0.9%)
+  Read 1:     7,808,811 bp
+  Read 2:    29,027,991 bp
+Total written (filtered):  3,975,083,294 bp (98.7%)
+  Read 1: 1,992,978,088 bp
+  Read 2: 1,982,105,206 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235994_1_out.fasta.gz -p data/trim-data/SRR7235994_2_out.fasta.gz data/sra/SRR7235994_1.fastq.gz data/sra/SRR7235994_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 227.53 s (17 us/read; 3.60 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         13,661,163
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:              96,754 (0.7%)
+Pairs written (passing filters):    13,564,409 (99.3%)
+
+Total basepairs processed: 4,098,348,900 bp
+  Read 1: 2,049,174,450 bp
+  Read 2: 2,049,174,450 bp
+Quality-trimmed:              36,306,439 bp (0.9%)
+  Read 1:     7,548,022 bp
+  Read 2:    28,758,417 bp
+Total written (filtered):  4,046,935,013 bp (98.7%)
+  Read 1: 2,029,405,278 bp
+  Read 2: 2,017,529,735 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235993_1_out.fasta.gz -p data/trim-data/SRR7235993_2_out.fasta.gz data/sra/SRR7235993_1.fastq.gz data/sra/SRR7235993_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 261.81 s (17 us/read; 3.60 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         15,710,422
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             136,332 (0.9%)
+Pairs written (passing filters):    15,574,090 (99.1%)
+
+Total basepairs processed: 4,713,126,600 bp
+  Read 1: 2,356,563,300 bp
+  Read 2: 2,356,563,300 bp
+Quality-trimmed:              43,407,535 bp (0.9%)
+  Read 1:    35,556,132 bp
+  Read 2:     7,851,403 bp
+Total written (filtered):  4,648,132,995 bp (98.6%)
+  Read 1: 2,317,517,175 bp
+  Read 2: 2,330,615,820 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235991_1_out.fasta.gz -p data/trim-data/SRR7235991_2_out.fasta.gz data/sra/SRR7235991_1.fastq.gz data/sra/SRR7235991_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+cutadapt: error: Error in FASTQ file at line 33701650: Premature end of file encountered. The incomplete final record was: '@SRR7235991.8425413 HISEQ-MFG:147:HMTVHBCXX:1:1202:16228:81015 length=150\nACTTAACTGTACTGTTTTAAACAATAGTAATTATTGAAAATCACTTTCTCAAAATACTGTTGACATTTTAGAGTCAGACATCCAGGGAAACTTGGGCAGAGCACTGTAATCAAGGCATGTAGGTGTAGGTAGTACTGCTAAGCC'
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235990_1_out.fasta.gz -p data/trim-data/SRR7235990_2_out.fasta.gz data/sra/SRR7235990_1.fastq.gz data/sra/SRR7235990_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 168.90 s (17 us/read; 3.63 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         10,218,844
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:              88,760 (0.9%)
+Pairs written (passing filters):    10,130,084 (99.1%)
+
+Total basepairs processed: 3,065,653,200 bp
+  Read 1: 1,532,826,600 bp
+  Read 2: 1,532,826,600 bp
+Quality-trimmed:              28,404,714 bp (0.9%)
+  Read 1:     5,924,226 bp
+  Read 2:    22,480,488 bp
+Total written (filtered):  3,023,709,005 bp (98.6%)
+  Read 1: 1,515,654,309 bp
+  Read 2: 1,508,054,696 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235989_1_out.fasta.gz -p data/trim-data/SRR7235989_2_out.fasta.gz data/sra/SRR7235989_1.fastq.gz data/sra/SRR7235989_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 191.95 s (16 us/read; 3.67 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         11,738,621
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             544,986 (4.6%)
+Pairs written (passing filters):    11,193,635 (95.4%)
+
+Total basepairs processed: 3,521,586,300 bp
+  Read 1: 1,760,793,150 bp
+  Read 2: 1,760,793,150 bp
+Quality-trimmed:             289,024,630 bp (8.2%)
+  Read 1:   146,760,846 bp
+  Read 2:   142,263,784 bp
+Total written (filtered):  3,170,410,104 bp (90.0%)
+  Read 1: 1,584,827,610 bp
+  Read 2: 1,585,582,494 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235999_1_out.fasta.gz -p data/trim-data/SRR7235999_2_out.fasta.gz data/sra/SRR7235999_1.fastq.gz data/sra/SRR7235999_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 297.99 s (17 us/read; 3.59 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         17,830,992
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             139,413 (0.8%)
+Pairs written (passing filters):    17,691,579 (99.2%)
+
+Total basepairs processed: 5,349,297,600 bp
+  Read 1: 2,674,648,800 bp
+  Read 2: 2,674,648,800 bp
+Quality-trimmed:              44,712,505 bp (0.8%)
+  Read 1:    23,098,425 bp
+  Read 2:    21,614,080 bp
+Total written (filtered):  5,283,366,817 bp (98.8%)
+  Read 1: 2,642,014,699 bp
+  Read 2: 2,641,352,118 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235998_1_out.fasta.gz -p data/trim-data/SRR7235998_2_out.fasta.gz data/sra/SRR7235998_1.fastq.gz data/sra/SRR7235998_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 265.82 s (17 us/read; 3.61 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         16,010,284
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             129,673 (0.8%)
+Pairs written (passing filters):    15,880,611 (99.2%)
+
+Total basepairs processed: 4,803,085,200 bp
+  Read 1: 2,401,542,600 bp
+  Read 2: 2,401,542,600 bp
+Quality-trimmed:              44,279,674 bp (0.9%)
+  Read 1:    21,429,393 bp
+  Read 2:    22,850,281 bp
+Total written (filtered):  4,738,437,842 bp (98.7%)
+  Read 1: 2,368,843,689 bp
+  Read 2: 2,369,594,153 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236022_1_out.fasta.gz -p data/trim-data/SRR7236022_2_out.fasta.gz data/sra/SRR7236022_1.fastq.gz data/sra/SRR7236022_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 245.37 s (17 us/read; 3.62 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         14,794,553
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             122,820 (0.8%)
+Pairs written (passing filters):    14,671,733 (99.2%)
+
+Total basepairs processed: 4,438,365,900 bp
+  Read 1: 2,219,182,950 bp
+  Read 2: 2,219,182,950 bp
+Quality-trimmed:              38,591,158 bp (0.9%)
+  Read 1:    19,898,129 bp
+  Read 2:    18,693,029 bp
+Total written (filtered):  4,381,095,472 bp (98.7%)
+  Read 1: 2,190,808,113 bp
+  Read 2: 2,190,287,359 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236035_1_out.fasta.gz -p data/trim-data/SRR7236035_2_out.fasta.gz data/sra/SRR7236035_1.fastq.gz data/sra/SRR7236035_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 242.38 s (17 us/read; 3.61 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         14,592,464
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             129,675 (0.9%)
+Pairs written (passing filters):    14,462,789 (99.1%)
+
+Total basepairs processed: 4,377,739,200 bp
+  Read 1: 2,188,869,600 bp
+  Read 2: 2,188,869,600 bp
+Quality-trimmed:              45,050,271 bp (1.0%)
+  Read 1:    10,154,579 bp
+  Read 2:    34,895,692 bp
+Total written (filtered):  4,312,295,699 bp (98.5%)
+  Read 1: 2,162,382,554 bp
+  Read 2: 2,149,913,145 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR12363335_1_out.fasta.gz -p data/trim-data/SRR12363335_2_out.fasta.gz data/sra/SRR12363335_1.fastq.gz data/sra/SRR12363335_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 666.11 s (16 us/read; 3.72 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         41,257,945
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:           1,605,783 (3.9%)
+Pairs written (passing filters):    39,652,162 (96.1%)
+
+Total basepairs processed: 12,459,899,390 bp
+  Read 1: 6,229,949,695 bp
+  Read 2: 6,229,949,695 bp
+Quality-trimmed:             480,897,350 bp (3.9%)
+  Read 1:    72,953,977 bp
+  Read 2:   407,943,373 bp
+Total written (filtered):  11,726,541,149 bp (94.1%)
+  Read 1: 5,930,973,863 bp
+  Read 2: 5,795,567,286 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236006_1_out.fasta.gz -p data/trim-data/SRR7236006_2_out.fasta.gz data/sra/SRR7236006_1.fastq.gz data/sra/SRR7236006_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 208.02 s (17 us/read; 3.57 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         12,392,632
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             117,481 (0.9%)
+Pairs written (passing filters):    12,275,151 (99.1%)
+
+Total basepairs processed: 3,717,789,600 bp
+  Read 1: 1,858,894,800 bp
+  Read 2: 1,858,894,800 bp
+Quality-trimmed:              41,319,909 bp (1.1%)
+  Read 1:     8,484,814 bp
+  Read 2:    32,835,095 bp
+Total written (filtered):  3,657,922,852 bp (98.4%)
+  Read 1: 1,835,233,060 bp
+  Read 2: 1,822,689,792 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR12363334_1_out.fasta.gz -p data/trim-data/SRR12363334_2_out.fasta.gz data/sra/SRR12363334_1.fastq.gz data/sra/SRR12363334_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 635.19 s (16 us/read; 3.72 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         39,337,453
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:           2,024,513 (5.1%)
+Pairs written (passing filters):    37,312,940 (94.9%)
+
+Total basepairs processed: 11,879,910,806 bp
+  Read 1: 5,939,955,403 bp
+  Read 2: 5,939,955,403 bp
+Quality-trimmed:             569,367,165 bp (4.8%)
+  Read 1:    77,596,442 bp
+  Read 2:   491,770,723 bp
+Total written (filtered):  10,992,092,288 bp (92.5%)
+  Read 1: 5,575,122,637 bp
+  Read 2: 5,416,969,651 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR12363329_1_out.fasta.gz -p data/trim-data/SRR12363329_2_out.fasta.gz data/sra/SRR12363329_1.fastq.gz data/sra/SRR12363329_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 482.97 s (16 us/read; 3.75 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         30,175,411
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             253,224 (0.8%)
+Pairs written (passing filters):    29,922,187 (99.2%)
+
+Total basepairs processed: 9,112,974,122 bp
+  Read 1: 4,556,487,061 bp
+  Read 2: 4,556,487,061 bp
+Quality-trimmed:             141,392,864 bp (1.6%)
+  Read 1:    39,489,651 bp
+  Read 2:   101,903,213 bp
+Total written (filtered):  8,931,165,109 bp (98.0%)
+  Read 1: 4,485,345,099 bp
+  Read 2: 4,445,820,010 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR12363328_1_out.fasta.gz -p data/trim-data/SRR12363328_2_out.fasta.gz data/sra/SRR12363328_1.fastq.gz data/sra/SRR12363328_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 623.40 s (16 us/read; 3.76 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         39,081,879
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:           1,662,854 (4.3%)
+Pairs written (passing filters):    37,419,025 (95.7%)
+
+Total basepairs processed: 11,802,727,458 bp
+  Read 1: 5,901,363,729 bp
+  Read 2: 5,901,363,729 bp
+Quality-trimmed:             483,069,094 bp (4.1%)
+  Read 1:    68,304,784 bp
+  Read 2:   414,764,310 bp
+Total written (filtered):  11,058,107,221 bp (93.7%)
+  Read 1: 5,597,883,178 bp
+  Read 2: 5,460,224,043 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236013_1_out.fasta.gz -p data/trim-data/SRR7236013_2_out.fasta.gz data/sra/SRR7236013_1.fastq.gz data/sra/SRR7236013_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 196.14 s (17 us/read; 3.58 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         11,705,743
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             143,257 (1.2%)
+Pairs written (passing filters):    11,562,486 (98.8%)
+
+Total basepairs processed: 3,511,722,900 bp
+  Read 1: 1,755,861,450 bp
+  Read 2: 1,755,861,450 bp
+Quality-trimmed:              40,524,961 bp (1.2%)
+  Read 1:    32,650,621 bp
+  Read 2:     7,874,340 bp
+Total written (filtered):  3,448,740,062 bp (98.2%)
+  Read 1: 1,719,850,684 bp
+  Read 2: 1,728,889,378 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR12363332_1_out.fasta.gz -p data/trim-data/SRR12363332_2_out.fasta.gz data/sra/SRR12363332_1.fastq.gz data/sra/SRR12363332_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 625.80 s (16 us/read; 3.73 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         38,955,398
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:           1,172,194 (3.0%)
+Pairs written (passing filters):    37,783,204 (97.0%)
+
+Total basepairs processed: 11,764,530,196 bp
+  Read 1: 5,882,265,098 bp
+  Read 2: 5,882,265,098 bp
+Quality-trimmed:             398,144,614 bp (3.4%)
+  Read 1:    72,515,404 bp
+  Read 2:   325,629,210 bp
+Total written (filtered):  11,182,685,786 bp (95.1%)
+  Read 1: 5,647,259,457 bp
+  Read 2: 5,535,426,329 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236024_1_out.fasta.gz -p data/trim-data/SRR7236024_2_out.fasta.gz data/sra/SRR7236024_1.fastq.gz data/sra/SRR7236024_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 204.40 s (17 us/read; 3.58 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         12,211,820
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             100,882 (0.8%)
+Pairs written (passing filters):    12,110,938 (99.2%)
+
+Total basepairs processed: 3,663,546,000 bp
+  Read 1: 1,831,773,000 bp
+  Read 2: 1,831,773,000 bp
+Quality-trimmed:              37,586,968 bp (1.0%)
+  Read 1:    29,269,142 bp
+  Read 2:     8,317,826 bp
+Total written (filtered):  3,610,043,963 bp (98.5%)
+  Read 1: 1,799,364,361 bp
+  Read 2: 1,810,679,602 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR12363326_1_out.fasta.gz -p data/trim-data/SRR12363326_2_out.fasta.gz data/sra/SRR12363326_1.fastq.gz data/sra/SRR12363326_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 446.34 s (16 us/read; 3.77 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         28,018,985
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             187,079 (0.7%)
+Pairs written (passing filters):    27,831,906 (99.3%)
+
+Total basepairs processed: 8,461,733,470 bp
+  Read 1: 4,230,866,735 bp
+  Read 2: 4,230,866,735 bp
+Quality-trimmed:             116,204,107 bp (1.4%)
+  Read 1:    36,713,383 bp
+  Read 2:    79,490,724 bp
+Total written (filtered):  8,315,487,528 bp (98.3%)
+  Read 1: 4,171,707,404 bp
+  Read 2: 4,143,780,124 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR12363325_1_out.fasta.gz -p data/trim-data/SRR12363325_2_out.fasta.gz data/sra/SRR12363325_1.fastq.gz data/sra/SRR12363325_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 573.75 s (16 us/read; 3.75 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         35,857,797
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             745,827 (2.1%)
+Pairs written (passing filters):    35,111,970 (97.9%)
+
+Total basepairs processed: 10,829,054,694 bp
+  Read 1: 5,414,527,347 bp
+  Read 2: 5,414,527,347 bp
+Quality-trimmed:             264,032,840 bp (2.4%)
+  Read 1:    51,849,122 bp
+  Read 2:   212,183,718 bp
+Total written (filtered):  10,448,166,264 bp (96.5%)
+  Read 1: 5,261,592,981 bp
+  Read 2: 5,186,573,283 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR12363323_1_out.fasta.gz -p data/trim-data/SRR12363323_2_out.fasta.gz data/sra/SRR12363323_1.fastq.gz data/sra/SRR12363323_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 611.27 s (16 us/read; 3.75 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         38,202,536
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             767,055 (2.0%)
+Pairs written (passing filters):    37,435,481 (98.0%)
+
+Total basepairs processed: 11,537,165,872 bp
+  Read 1: 5,768,582,936 bp
+  Read 2: 5,768,582,936 bp
+Quality-trimmed:             396,750,676 bp (3.4%)
+  Read 1:   113,526,871 bp
+  Read 2:   283,223,805 bp
+Total written (filtered):  11,020,400,394 bp (95.5%)
+  Read 1: 5,552,042,566 bp
+  Read 2: 5,468,357,828 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR12363333_1_out.fasta.gz -p data/trim-data/SRR12363333_2_out.fasta.gz data/sra/SRR12363333_1.fastq.gz data/sra/SRR12363333_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 599.98 s (16 us/read; 3.74 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         37,400,220
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             728,148 (1.9%)
+Pairs written (passing filters):    36,672,072 (98.1%)
+
+Total basepairs processed: 11,294,866,440 bp
+  Read 1: 5,647,433,220 bp
+  Read 2: 5,647,433,220 bp
+Quality-trimmed:             285,472,818 bp (2.5%)
+  Read 1:    62,286,641 bp
+  Read 2:   223,186,177 bp
+Total written (filtered):  10,895,312,496 bp (96.5%)
+  Read 1: 5,486,483,896 bp
+  Read 2: 5,408,828,600 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235997_1_out.fasta.gz -p data/trim-data/SRR7235997_2_out.fasta.gz data/sra/SRR7235997_1.fastq.gz data/sra/SRR7235997_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 234.97 s (17 us/read; 3.61 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         14,132,863
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             135,363 (1.0%)
+Pairs written (passing filters):    13,997,500 (99.0%)
+
+Total basepairs processed: 4,239,858,900 bp
+  Read 1: 2,119,929,450 bp
+  Read 2: 2,119,929,450 bp
+Quality-trimmed:              45,561,122 bp (1.1%)
+  Read 1:     9,856,069 bp
+  Read 2:    35,705,053 bp
+Total written (filtered):  4,173,003,542 bp (98.4%)
+  Read 1: 2,092,683,115 bp
+  Read 2: 2,080,320,427 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235978_1_out.fasta.gz -p data/trim-data/SRR7235978_2_out.fasta.gz data/sra/SRR7235978_1.fastq.gz data/sra/SRR7235978_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 208.55 s (17 us/read; 3.60 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         12,528,618
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             141,897 (1.1%)
+Pairs written (passing filters):    12,386,721 (98.9%)
+
+Total basepairs processed: 3,758,585,400 bp
+  Read 1: 1,879,292,700 bp
+  Read 2: 1,879,292,700 bp
+Quality-trimmed:              40,167,338 bp (1.1%)
+  Read 1:    32,124,902 bp
+  Read 2:     8,042,436 bp
+Total written (filtered):  3,696,085,686 bp (98.3%)
+  Read 1: 1,843,661,709 bp
+  Read 2: 1,852,423,977 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235977_1_out.fasta.gz -p data/trim-data/SRR7235977_2_out.fasta.gz data/sra/SRR7235977_1.fastq.gz data/sra/SRR7235977_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 263.62 s (17 us/read; 3.59 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         15,782,215
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             164,761 (1.0%)
+Pairs written (passing filters):    15,617,454 (99.0%)
+
+Total basepairs processed: 4,734,664,500 bp
+  Read 1: 2,367,332,250 bp
+  Read 2: 2,367,332,250 bp
+Quality-trimmed:              49,259,317 bp (1.0%)
+  Read 1:    39,175,664 bp
+  Read 2:    10,083,653 bp
+Total written (filtered):  4,659,402,894 bp (98.4%)
+  Read 1: 2,323,701,102 bp
+  Read 2: 2,335,701,792 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236000_1_out.fasta.gz -p data/trim-data/SRR7236000_2_out.fasta.gz data/sra/SRR7236000_1.fastq.gz data/sra/SRR7236000_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 225.92 s (17 us/read; 3.61 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         13,580,103
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             152,842 (1.1%)
+Pairs written (passing filters):    13,427,261 (98.9%)
+
+Total basepairs processed: 4,074,030,900 bp
+  Read 1: 2,037,015,450 bp
+  Read 2: 2,037,015,450 bp
+Quality-trimmed:              44,478,243 bp (1.1%)
+  Read 1:    35,155,734 bp
+  Read 2:     9,322,509 bp
+Total written (filtered):  4,005,666,919 bp (98.3%)
+  Read 1: 1,998,020,087 bp
+  Read 2: 2,007,646,832 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236015_1_out.fasta.gz -p data/trim-data/SRR7236015_2_out.fasta.gz data/sra/SRR7236015_1.fastq.gz data/sra/SRR7236015_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 223.36 s (17 us/read; 3.57 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         13,300,503
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             117,333 (0.9%)
+Pairs written (passing filters):    13,183,170 (99.1%)
+
+Total basepairs processed: 3,990,150,900 bp
+  Read 1: 1,995,075,450 bp
+  Read 2: 1,995,075,450 bp
+Quality-trimmed:              35,317,663 bp (0.9%)
+  Read 1:    18,256,201 bp
+  Read 2:    17,061,462 bp
+Total written (filtered):  3,936,481,975 bp (98.7%)
+  Read 1: 1,968,469,158 bp
+  Read 2: 1,968,012,817 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236016_1_out.fasta.gz -p data/trim-data/SRR7236016_2_out.fasta.gz data/sra/SRR7236016_1.fastq.gz data/sra/SRR7236016_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 190.91 s (17 us/read; 3.58 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         11,396,705
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             124,891 (1.1%)
+Pairs written (passing filters):    11,271,814 (98.9%)
+
+Total basepairs processed: 3,419,011,500 bp
+  Read 1: 1,709,505,750 bp
+  Read 2: 1,709,505,750 bp
+Quality-trimmed:              39,189,186 bp (1.1%)
+  Read 1:    30,368,615 bp
+  Read 2:     8,820,571 bp
+Total written (filtered):  3,360,481,178 bp (98.3%)
+  Read 1: 1,675,841,281 bp
+  Read 2: 1,684,639,897 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235988_1_out.fasta.gz -p data/trim-data/SRR7235988_2_out.fasta.gz data/sra/SRR7235988_1.fastq.gz data/sra/SRR7235988_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 223.95 s (17 us/read; 3.58 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         13,372,068
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             115,162 (0.9%)
+Pairs written (passing filters):    13,256,906 (99.1%)
+
+Total basepairs processed: 4,011,620,400 bp
+  Read 1: 2,005,810,200 bp
+  Read 2: 2,005,810,200 bp
+Quality-trimmed:              37,415,260 bp (0.9%)
+  Read 1:     8,338,796 bp
+  Read 2:    29,076,464 bp
+Total written (filtered):  3,956,980,105 bp (98.6%)
+  Read 1: 1,983,543,504 bp
+  Read 2: 1,973,436,601 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235987_1_out.fasta.gz -p data/trim-data/SRR7235987_2_out.fasta.gz data/sra/SRR7235987_1.fastq.gz data/sra/SRR7235987_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 181.45 s (17 us/read; 3.58 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         10,820,850
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:              93,755 (0.9%)
+Pairs written (passing filters):    10,727,095 (99.1%)
+
+Total basepairs processed: 3,246,255,000 bp
+  Read 1: 1,623,127,500 bp
+  Read 2: 1,623,127,500 bp
+Quality-trimmed:              29,227,380 bp (0.9%)
+  Read 1:    22,943,607 bp
+  Read 2:     6,283,773 bp
+Total written (filtered):  3,202,697,406 bp (98.7%)
+  Read 1: 1,597,636,468 bp
+  Read 2: 1,605,060,938 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235981_1_out.fasta.gz -p data/trim-data/SRR7235981_2_out.fasta.gz data/sra/SRR7235981_1.fastq.gz data/sra/SRR7235981_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 215.72 s (17 us/read; 3.55 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         12,764,601
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             133,840 (1.0%)
+Pairs written (passing filters):    12,630,761 (99.0%)
+
+Total basepairs processed: 3,829,380,300 bp
+  Read 1: 1,914,690,150 bp
+  Read 2: 1,914,690,150 bp
+Quality-trimmed:              44,840,332 bp (1.2%)
+  Read 1:     9,678,608 bp
+  Read 2:    35,161,724 bp
+Total written (filtered):  3,763,357,262 bp (98.3%)
+  Read 1: 1,887,686,252 bp
+  Read 2: 1,875,671,010 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235984_1_out.fasta.gz -p data/trim-data/SRR7235984_2_out.fasta.gz data/sra/SRR7235984_1.fastq.gz data/sra/SRR7235984_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 240.29 s (17 us/read; 3.56 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         14,271,964
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             126,450 (0.9%)
+Pairs written (passing filters):    14,145,514 (99.1%)
+
+Total basepairs processed: 4,281,589,200 bp
+  Read 1: 2,140,794,600 bp
+  Read 2: 2,140,794,600 bp
+Quality-trimmed:              43,925,055 bp (1.0%)
+  Read 1:     9,042,607 bp
+  Read 2:    34,882,448 bp
+Total written (filtered):  4,217,611,065 bp (98.5%)
+  Read 1: 2,115,129,660 bp
+  Read 2: 2,102,481,405 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235980_1_out.fasta.gz -p data/trim-data/SRR7235980_2_out.fasta.gz data/sra/SRR7235980_1.fastq.gz data/sra/SRR7235980_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 178.55 s (17 us/read; 3.60 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         10,701,173
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:              98,705 (0.9%)
+Pairs written (passing filters):    10,602,468 (99.1%)
+
+Total basepairs processed: 3,210,351,900 bp
+  Read 1: 1,605,175,950 bp
+  Read 2: 1,605,175,950 bp
+Quality-trimmed:              31,511,313 bp (1.0%)
+  Read 1:    25,396,371 bp
+  Read 2:     6,114,942 bp
+Total written (filtered):  3,163,670,917 bp (98.5%)
+  Read 1: 1,577,286,057 bp
+  Read 2: 1,586,384,860 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235979_1_out.fasta.gz -p data/trim-data/SRR7235979_2_out.fasta.gz data/sra/SRR7235979_1.fastq.gz data/sra/SRR7235979_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 205.14 s (17 us/read; 3.57 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         12,190,915
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:              96,647 (0.8%)
+Pairs written (passing filters):    12,094,268 (99.2%)
+
+Total basepairs processed: 3,657,274,500 bp
+  Read 1: 1,828,637,250 bp
+  Read 2: 1,828,637,250 bp
+Quality-trimmed:              32,623,138 bp (0.9%)
+  Read 1:    16,772,793 bp
+  Read 2:    15,850,345 bp
+Total written (filtered):  3,609,423,852 bp (98.7%)
+  Read 1: 1,805,016,204 bp
+  Read 2: 1,804,407,648 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236011_1_out.fasta.gz -p data/trim-data/SRR7236011_2_out.fasta.gz data/sra/SRR7236011_1.fastq.gz data/sra/SRR7236011_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 221.91 s (17 us/read; 3.58 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         13,245,333
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:              90,859 (0.7%)
+Pairs written (passing filters):    13,154,474 (99.3%)
+
+Total basepairs processed: 3,973,599,900 bp
+  Read 1: 1,986,799,950 bp
+  Read 2: 1,986,799,950 bp
+Quality-trimmed:              31,704,198 bp (0.8%)
+  Read 1:    15,165,598 bp
+  Read 2:    16,538,600 bp
+Total written (filtered):  3,927,798,294 bp (98.8%)
+  Read 1: 1,963,719,670 bp
+  Read 2: 1,964,078,624 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236012_1_out.fasta.gz -p data/trim-data/SRR7236012_2_out.fasta.gz data/sra/SRR7236012_1.fastq.gz data/sra/SRR7236012_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 246.81 s (17 us/read; 3.54 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         14,579,573
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             110,535 (0.8%)
+Pairs written (passing filters):    14,469,038 (99.2%)
+
+Total basepairs processed: 4,373,871,900 bp
+  Read 1: 2,186,935,950 bp
+  Read 2: 2,186,935,950 bp
+Quality-trimmed:              37,868,492 bp (0.9%)
+  Read 1:    18,422,410 bp
+  Read 2:    19,446,082 bp
+Total written (filtered):  4,319,237,724 bp (98.8%)
+  Read 1: 2,159,311,446 bp
+  Read 2: 2,159,926,278 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236001_1_out.fasta.gz -p data/trim-data/SRR7236001_2_out.fasta.gz data/sra/SRR7236001_1.fastq.gz data/sra/SRR7236001_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 251.02 s (17 us/read; 3.59 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         15,037,276
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             115,714 (0.8%)
+Pairs written (passing filters):    14,921,562 (99.2%)
+
+Total basepairs processed: 4,511,182,800 bp
+  Read 1: 2,255,591,400 bp
+  Read 2: 2,255,591,400 bp
+Quality-trimmed:              38,280,221 bp (0.8%)
+  Read 1:    19,834,587 bp
+  Read 2:    18,445,634 bp
+Total written (filtered):  4,454,743,965 bp (98.7%)
+  Read 1: 2,227,655,623 bp
+  Read 2: 2,227,088,342 bp
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7236031_1_out.fasta.gz -p data/trim-data/SRR7236031_2_out.fasta.gz data/sra/SRR7236031_1.fastq.gz data/sra/SRR7236031_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 193.87 s (17 us/read; 3.57 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         11,541,826
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:              98,140 (0.9%)
+Pairs written (passing filters):    11,443,686 (99.1%)
+
+Total basepairs processed: 3,462,547,800 bp
+  Read 1: 1,731,273,900 bp
+  Read 2: 1,731,273,900 bp
+Quality-trimmed:              30,609,202 bp (0.9%)
+  Read 1:    24,207,520 bp
+  Read 2:     6,401,682 bp
+Total written (filtered):  3,416,637,209 bp (98.7%)
+  Read 1: 1,704,334,805 bp
+  Read 2: 1,712,302,404 bp

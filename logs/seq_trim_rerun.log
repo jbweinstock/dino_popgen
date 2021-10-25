@@ -1,0 +1,23 @@
+This is cutadapt 2.6 with Python 3.7.11
+Command line parameters: -m 50 -q 25 --trim-n -o data/trim-data/SRR7235991_1_out.fasta.gz -p data/trim-data/SRR7235991_2_out.fasta.gz data/sra/SRR7235991_1.fastq.gz data/sra/SRR7235991_2.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+[--=8        ] 00:04:02    14,623,446 reads  @     16.6 µs/read;   3.62 M reads/minute
+Finished in 242.35 s (17 us/read; 3.62 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         14,623,446
+  Read 1 with adapter:                       0 (0.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:             120,908 (0.8%)
+Pairs written (passing filters):    14,502,538 (99.2%)
+
+Total basepairs processed: 4,387,033,800 bp
+  Read 1: 2,193,516,900 bp
+  Read 2: 2,193,516,900 bp
+Quality-trimmed:              38,679,483 bp (0.9%)
+  Read 1:    18,711,749 bp
+  Read 2:    19,967,734 bp
+Total written (filtered):  4,329,554,427 bp (98.7%)
+  Read 1: 2,164,486,143 bp
+  Read 2: 2,165,068,284 bp
