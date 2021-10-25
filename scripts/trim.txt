@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#SBATCH --partition=scavenger
+#SBATCH --job-name=seq_trim
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=jweinstock@whoi.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=10G
+#SBATCH --time=06:00:00
+#SBATCH --output=seq_trim_%j.log
+#export OMP_NUM_THREADS=1
+
+#run from dino_popgen/ root directory
+#gave 6 hrs & 10G mem
+#USAGE: sbatch scripts/trim.txt scripts/load-seqs/seq_access_nums.txt
+
+for seq in $(cat ${1})
+do
+	cutadapt -m 50 -q 25 --trim-n -o data/trim-data/${seq}_1_out.fasta.gz -p data/trim-data/${seq}_2_out.fasta.gz data/sra/${seq}_1.fastq.gz data/sra/${seq}_2.fastq.gz
+done
+
