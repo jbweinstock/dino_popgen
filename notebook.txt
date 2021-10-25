@@ -14,3 +14,9 @@
 			NOTE: The sequence files contain N's in addition to ATCG's; the N's signify an ambiguous base
 10/19/2021 9:00 - EF created project Jupyter notebook & directory
 10/19/2021 14:15 - JBW removed 2 accession numbers from seq_access_nums.txt :: the 2 biggest in size
+10/22/2021 16:30 - Group loaded cutadapt (v2.6, bc 1.6 was unavailable) & ran sbatch to trim seqs
+			NOTE: Smallest seq (SRR7235991) returned errors with cutadapt test > sequence was likely not loaded fully. Delete & re-load!
+10/25/2021 12:00 - Group meeting: re-loaded & zipped smallest seq,
+			Caroline started alignment script, 
+			Evie created script for summary stats on trims
+
