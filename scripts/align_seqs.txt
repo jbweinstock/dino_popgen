@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#SBATCH --partition=scavenger
+#SBATCH --job-name=seq_align
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=crzucidlo@whoi.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=50G
+#SBATCH --time=06:00:00
+#SBATCH --output=seq_align_%j.log
+#export OMP_NUM_THREADS=1
+
+#run from dino_popgen/ root directory
+#gave  hrs & G mem
+#USAGE: sbatch scripts/align_seqs.txt 
+
+for seq in $(cat ${1})
+do
+        bwa mem -t _ /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/trim-data/${seq}_1_out.fasta.gz /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/trim-data/${seq}_2_out.fasta.gz > data/align-data/${seq}.sam 
+done
+
