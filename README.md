@@ -10,7 +10,7 @@
    * sra/
      - 47 raw sequences from "shallow" reads
    * genome/
-     - published draft genome for S. 'fitti' from same study
+     - published draft genome for _S. 'fitti'_ from same study
    * trim-data/
      - trimmed sequences (after cutadapt run)
    * align-data/
