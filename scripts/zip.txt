@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#SBATCH --partition=scavenger
+#SBATCH --job-name=seq_zip_2
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=jweinstock@whoi.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=5G
+#SBATCH --time=12:00:00
+#SBATCH --output=seq_zip_2_%j.log
+#export OMP_NUM_THREADS=1
+
+# USAGE: sbatch zip.txt
+# Zips all the sequence files to save space on the HPC
+# Must be in same folder as sequences
+
+gzip *fastq
