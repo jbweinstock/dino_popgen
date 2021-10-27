@@ -19,4 +19,6 @@
 10/25/2021 12:00 - Group meeting: re-loaded & zipped smallest seq,
 			Caroline started alignment script, 
 			Evie created script for summary stats on trims
-
+10/27/2021 14:00 - CLR ran bwa_index.txt prior to alignment b/c this said to: https://github.com/jts/methylation-analysis/issues/13
+		       ran practice alignment script (practice_align.txt)
+10/27/2021 14:45 - CLR submitted poseidon job to align all trimmed sequences with align_seqs.txt
