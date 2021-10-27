@@ -5,18 +5,18 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=crzucidlo@whoi.edu
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=1
-#SBATCH --mem=50G
-#SBATCH --time=06:00:00
+#SBATCH --cpus-per-task=16
+#SBATCH --mem=180G
+#SBATCH --time=23:59:00
 #SBATCH --output=seq_align_%j.log
-#export OMP_NUM_THREADS=1
+#export OMP_NUM_THREADS=16
 
 #run from dino_popgen/ root directory
-#gave  hrs & G mem
-#USAGE: sbatch scripts/align_seqs.txt 
+#gave 24 hrs & 180G mem
+#USAGE: sbatch scripts/align_seqs.txt scripts/load-seqs/seq_access_nums.txt 
 
 for seq in $(cat ${1})
 do
-        bwa mem -t _ /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/trim-data/${seq}_1_out.fasta.gz /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/trim-data/${seq}_2_out.fasta.gz > data/align-data/${seq}.sam 
+        bwa mem -t 16 /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/trim-data/${seq}_1_out.fasta.gz /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/trim-data/${seq}_2_out.fasta.gz > data/align-data/${seq}.sam 
 done
 
