@@ -1,0 +1,27 @@
+[bwa_index] Pack FASTA... 2.57 sec
+[bwa_index] Construct BWT for the packed sequence...
+[BWTIncCreate] textLength=913294530, availableWord=76262620
+[BWTIncConstructFromPacked] 10 iterations done. 99999986 characters processed.
+[BWTIncConstructFromPacked] 20 iterations done. 199999986 characters processed.
+[BWTIncConstructFromPacked] 30 iterations done. 297668274 characters processed.
+[BWTIncConstructFromPacked] 40 iterations done. 385161586 characters processed.
+[BWTIncConstructFromPacked] 50 iterations done. 462921858 characters processed.
+[BWTIncConstructFromPacked] 60 iterations done. 532031410 characters processed.
+[BWTIncConstructFromPacked] 70 iterations done. 593452114 characters processed.
+[BWTIncConstructFromPacked] 80 iterations done. 648038978 characters processed.
+[BWTIncConstructFromPacked] 90 iterations done. 696551938 characters processed.
+[BWTIncConstructFromPacked] 100 iterations done. 739666338 characters processed.
+[BWTIncConstructFromPacked] 110 iterations done. 777982514 characters processed.
+[BWTIncConstructFromPacked] 120 iterations done. 812033970 characters processed.
+[BWTIncConstructFromPacked] 130 iterations done. 842294994 characters processed.
+[BWTIncConstructFromPacked] 140 iterations done. 869187042 characters processed.
+[BWTIncConstructFromPacked] 150 iterations done. 893084706 characters processed.
+[BWTIncConstructFromPacked] 160 iterations done. 913294530 characters processed.
+[bwa_index] 222.07 seconds elapse.
+[bwa_index] Update BWT... 1.69 sec
+[bwa_index] Pack forward-only FASTA... 1.57 sec
+[bwa_index] Construct SA from BWT and Occ... 105.95 sec
+[bwt_gen] Finished constructing BWT in 160 iterations.
+[main] Version: 0.7.15-r1140
+[main] CMD: bwa index /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa
+[main] Real time: 335.603 sec; CPU: 333.859 sec
