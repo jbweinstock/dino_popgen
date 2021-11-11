@@ -30,7 +30,15 @@ Code associated with this project, including all scripts used for data cleaning,
    * selection/
  - scripts/
    * load_seqs/
+     - load_seqs.txt
+     - one_num.txt
+     - seq_access_missing.txt
+     - seq_access_nums_short.txt
+     - seq_access_nums.txt
    * zip.txt
    * trim.txt
    * align_seqs.txt
+   * snp_id.txt
+   * mpileup.txt
+   * bcftools_run.txt
 
