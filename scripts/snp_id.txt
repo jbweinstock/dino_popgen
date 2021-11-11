@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#SBATCH --partition=scavenger
+#SBATCH --job-name=snp_id
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=crzucidlo@whoi.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=16
+#SBATCH --mem=180G
+#SBATCH --time=23:59:00
+#SBATCH --output=snp_id_%j.log
+#export OMP_NUM_THREADS=16
+
+#run from dino_popgen/ root directory
+#gave 24 hrs & 180G mem
+#USAGE: sbatch scripts/snp_id.txt 
+
+samtools mpileup -ugAEf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa -t AD,DP /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/*.bam > /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/symb_mpileup.bcf
+bcftools call -f GQ -vmO z --ploidy 1 -o symb_mpileup.vcf.gz /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/symb_mpileup.bcf
