@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#SBATCH --partition=scavenger
+#SBATCH --job-name=mpileup
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=crzucidlo@whoi.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=16
+#SBATCH --mem=180G
+#SBATCH --time=23:59:00
+#SBATCH --output=mpileup_%j.log
+#export OMP_NUM_THREADS=16
+
+#run from dino_popgen/ root directory
+#gave 24 hrs & 180G mem
+#USAGE: sbatch scripts/mpileup.txt 
+
+samtools mpileup -ugAEf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa -t AD,DP /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/*.nodups.bam > /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/symb_mpileup.bcf
