@@ -16,9 +16,29 @@
 10/19/2021 14:15 - JBW removed 2 accession numbers from seq_access_nums.txt :: the 2 biggest in size
 10/22/2021 16:30 - Group loaded cutadapt (v2.6, bc 1.6 was unavailable) & ran sbatch to trim seqs
 			NOTE: Smallest seq (SRR7235991) returned errors with cutadapt test > sequence was likely not loaded fully. Delete & re-load!
+10/25/2021 8:00  - EF wrote python script to pull trim stats from log
 10/25/2021 12:00 - Group meeting: re-loaded & zipped smallest seq,
-			Caroline started alignment script, 
-			Evie created script for summary stats on trims
+			CLR started alignment script, 
 10/27/2021 14:00 - CLR ran bwa_index.txt prior to alignment b/c this said to: https://github.com/jts/methylation-analysis/issues/13
 		       ran practice alignment script (practice_align.txt)
 10/27/2021 14:45 - CLR submitted poseidon job to align all trimmed sequences with align_seqs.txt
+10/28/2021 12:00 - CLR ran samtools on aligned sequences
+10/29/2021 12:00 - CLR ran additional samtools processing on aligned sequences
+11/11/2021 8:00  - EF drafted batch scripts for calling snps
+11/11/2021 14:00 - Group meeting: updated github, started running mpileup
+11/11/2021 18:00 - CLR ran bcftools call function
+11/11/2021 19:00 - EF ran bcftools view
+			NOTE: error when loading shared libraries; updated bcftools and was able to run succesfully
+11/12/2021 7:00  - EF submitted batch script for bcftools filter and installed vcftools
+			NOTE: vcftools version 0.1.13 (used in original github) is ntot available on bioconda; installed 0.1.14
+11/12/2021 14:00 - JBW and EF met with Cory to resolve github push issues
+11/12/2021 15:00 = EF ran vcftools to filter out low-quality SNPs
+11/17/2021 13:00 - Group met w/ Carolyn & confirmed that .vcf output looked OK; JBW & EF tested out R code, confirmed that plots looked OK
+11/18/2021 10:00 - CLR ran PCADAPT (v. 4.3.3) for outlier detection on local device (will add files to HPC after comparing to Bayescan)
+		   CLR created Bayescan environment
+			NOTE: Bayescan version 2.0.1 used (2.1.0 not available in conda)	
+11/18/2021 11:00 - JBW created and uploaded csv files of Supplemental Table 1: (i) the full table, and (ii) the table, subset with only the 47 sequences we re-analyzed
+			NOTE: If reading full table into R, must specify na.strings = c("n.a.","") because authors had both n.a.'s and blank cells
+11/28/2021 13:30 - JBW moved the supp_table files and the .txt file explaining how the supp table was re-ordered to match the .vcf file into the output folder;
+			JBW also uploaded the re-made Fig 2 & the .Rmd script used to make it!
+
