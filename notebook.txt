@@ -41,4 +41,5 @@
 			NOTE: If reading full table into R, must specify na.strings = c("n.a.","") because authors had both n.a.'s and blank cells
 11/28/2021 13:30 - JBW moved the supp_table files and the .txt file explaining how the supp table was re-ordered to match the .vcf file into the output folder;
 			JBW also uploaded the re-made Fig 2 & the .Rmd script used to make it!
-
+12/01/2021 13:30 - JBW moved lots of things from data/ to output/ following project instructions (sorry if this throws anyone off!!)
+12/02/2021 15:45 - JBW updated .gitignore file
