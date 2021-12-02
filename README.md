@@ -10,35 +10,88 @@ Code associated with this project, including all scripts used for data cleaning,
 **Directory Contents**
  - README.md
  - notebook.txt
+   * _text file for group members to log project activity/progress_
  - data/
-   * SraRunTable_PRJNA473816.txt
-     - project metadata (csv file)
+   * project-PRJNA473816-metadata.csv
+     - _project metadata from NCBI_
    * sra/
-     - 47 raw sequences from "shallow" reads
+     - _47 raw sequences (forward and reverse) from "shallow" reads_
    * genome/
-     - published draft genome for _S. 'fitti'_ from same study
-   * trim-data/
-     - trimmed sequences (after cutadapt run)
-   * align-data/
-     - ...
+     - _published draft genome for _S. 'fitti'_ from same study_
  - envs/
+   * XXXXXX
+     - [SOMETHING WITH SRA-TOOLS, ETC. FOR PRE-SNP STUFF]
+   * analyze_snps.yml
+     - 
+   * call_snps.yml
+     -
+ - figures
+   * Fig2_JBW.pdf
+   * 
+   * 
  - jupyter-notebooks/
+   * data-download.ipynb
+     - 
+   * dino_popgen_final_writeup.ipynb
+     - 
+   * trimlog_ext.ipynb
+     -
+   * figure-2_JBW.Rmd
+     - _R code for (re-)creation of figure 2_
  - logs/
+   * _log files from HPC sbatch runs_
  - output/
+   * supp_table_1.csv
+     - _Supp table 1, with sample metadata_
+   * supp_table_subset.csv
+     - _Supp table 1, subset with only the 47 samples re-analyzed here_
+   * supp_table_ordered.csv
+     - _Supp table 1, re-ordered to match vcf file_
+   * proc_for_vcf-seq-order.txt
+     - _file describing bash and R code used to convert supp_table_1.csv to supp_table_ordered.csv_
+   * trim-data/
+     - _trimmed sequences (after cutadapt run)_
+   * align-data/
+     - _aligned sequences (.bam files) (after bwa run)_
+   * snp_calling/
+     - _SNP data (output from bcftools)_
    * phylogeny/
-   * popgen/
-   * selection/
+     - [EVIE SHOULD ENTER A BRIEF SUMMARY... ALSO SHOULD THIS BE IN ANALYSIS OUTPUT?]
  - scripts/
-   * load_seqs/
+   * load-seqs/
      - load_seqs.txt
-     - one_num.txt
+     - one_num.txt #MAYBE DELETE EXCESS FILES??
      - seq_access_missing.txt
      - seq_access_nums_short.txt
      - seq_access_nums.txt
    * zip.txt
+     - _script to zip files so they take up less space_
    * trim.txt
+     - _script to trim sequences using cutadapt_
+   * bwa_index.txt
+     - 
    * align_seqs.txt
-   * snp_id.txt
+     - _script to align trimmed seqs to draft genome_
+   * samtools_seqs.txt
+     - _script to..._
    * mpileup.txt
-   * bcftools_run.txt
+     - _script to..._
+   * snp_id.txt
+     - _script to..._
+   * bayescan.txt
+     - _script to..._
+   * call_filter_snps/
+     - mpileup.txt
+     - bcftools_run.txt
+     - bcftools_filter.txt
+     - bcftools_view.txt
+     - vcftools_filter.txt
+   * phylogeny/
+     - vcftools_filter_phylo.txt
+     - vcftools_consensus.txt
+     - vcf2msa/
+       > vcf2msa.py
+       > mpileup_all.txt
+       > mpileup_all_*.log [SHOULD PROBS MOVE TO LOGS FOLDER]
+       > vcf2msa_run.txt
 
