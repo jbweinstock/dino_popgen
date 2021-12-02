@@ -1,1 +1,6 @@
 logs/samtools_nodups.log
+data/sra/
+data/genome/
+output/align-data/
+output/trim-data/
+
