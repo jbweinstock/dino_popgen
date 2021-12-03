@@ -1,0 +1,15 @@
+
+VCFtools - 0.1.14
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/HQ_snps_cp.vcf
+	--max-missing 1
+	--out allhqSNPmm80_phylo
+	--recode
+	--remove-indels
+
+After filtering, kept 47 out of 47 Individuals
+Outputting VCF file...
+After filtering, kept 5658 out of a possible 641119 Sites
+Run Time = 11.00 seconds

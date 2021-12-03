@@ -1,0 +1,24 @@
+/vortexfs1/apps/bio/gatk-4.0.4.0/bin/gatk:80: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(args) is 0 or (len(args) is 1 and (args[0] == "--help" or args[0] == "-h")):
+/vortexfs1/apps/bio/gatk-4.0.4.0/bin/gatk:80: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(args) is 0 or (len(args) is 1 and (args[0] == "--help" or args[0] == "-h")):
+/vortexfs1/apps/bio/gatk-4.0.4.0/bin/gatk:117: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(args) is 1 and args[0] == "--list":
+/vortexfs1/apps/bio/gatk-4.0.4.0/bin/gatk:301: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if call(["gsutil", "-q", "stat", gcsjar]) is 0:
+/vortexfs1/apps/bio/gatk-4.0.4.0/bin/gatk:305: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if call(["gsutil", "cp", jar, gcsjar]) is 0:
+/vortexfs1/apps/bio/gatk-4.0.4.0/bin/gatk:458: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if not len(properties) is 0:
+/vortexfs1/apps/bio/gatk-4.0.4.0/bin/gatk:462: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if not len(filesToAdd) is 0:
+Using GATK jar /vortexfs1/apps/bio/gatk-4.0.4.0/bin/gatk-package-4.0.4.0-37-g3189612-SNAPSHOT-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /vortexfs1/apps/bio/gatk-4.0.4.0/bin/gatk-package-4.0.4.0-37-g3189612-SNAPSHOT-local.jar FastaAlternateReferenceMaker -R /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1_nocommas.fa -O /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/phylogeny/SNP_output.fa -V /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/allhqSNPmm80_phylo.recode.vcf
+Exception in thread "main" java.lang.IncompatibleClassChangeError: Inconsistent constant pool data in classfile for class org/broadinstitute/barclay/argparser/CommandLineProgramGroup. Method 'int lambda$static$0(org.broadinstitute.barclay.argparser.CommandLineProgramGroup, org.broadinstitute.barclay.argparser.CommandLineProgramGroup)' at index 43 is CONSTANT_MethodRef and should be CONSTANT_InterfaceMethodRef
+	at org.broadinstitute.barclay.argparser.CommandLineProgramGroup.<clinit>(CommandLineProgramGroup.java:19)
+	at org.broadinstitute.hellbender.Main.printUsage(Main.java:380)
+	at org.broadinstitute.hellbender.Main.extractCommandLineProgram(Main.java:354)
+	at org.broadinstitute.hellbender.Main.setupConfigAndExtractProgram(Main.java:180)
+	at org.broadinstitute.hellbender.Main.mainEntry(Main.java:202)
+	at org.broadinstitute.hellbender.Main.main(Main.java:289)

@@ -1,0 +1,45 @@
+Using GATK jar /vortexfs1/home/efachon/.conda/envs/gatk4/share/gatk4-4.2.3.0-1/gatk-package-4.2.3.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /vortexfs1/home/efachon/.conda/envs/gatk4/share/gatk4-4.2.3.0-1/gatk-package-4.2.3.0-local.jar FastaAlternateReferenceMaker -R /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1_nocommas.fa -O /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/SNP_output.fa -V /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/allhqSNPmm80_phylo.recode.vcf
+17:59:05.792 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/vortexfs1/home/efachon/.conda/envs/gatk4/share/gatk4-4.2.3.0-1/gatk-package-4.2.3.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Dec 02, 2021 5:59:05 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+17:59:05.908 INFO  FastaAlternateReferenceMaker - ------------------------------------------------------------
+17:59:05.909 INFO  FastaAlternateReferenceMaker - The Genome Analysis Toolkit (GATK) v4.2.3.0
+17:59:05.909 INFO  FastaAlternateReferenceMaker - For support and documentation go to https://software.broadinstitute.org/gatk/
+17:59:05.909 INFO  FastaAlternateReferenceMaker - Executing as efachon@pn105 on Linux v3.10.0-693.2.2.el7.x86_64 amd64
+17:59:05.909 INFO  FastaAlternateReferenceMaker - Java runtime: OpenJDK 64-Bit Server VM v11.0.9.1-internal+0-adhoc..src
+17:59:05.909 INFO  FastaAlternateReferenceMaker - Start Date/Time: December 2, 2021 at 5:59:05 PM EST
+17:59:05.909 INFO  FastaAlternateReferenceMaker - ------------------------------------------------------------
+17:59:05.909 INFO  FastaAlternateReferenceMaker - ------------------------------------------------------------
+17:59:05.910 INFO  FastaAlternateReferenceMaker - HTSJDK Version: 2.24.1
+17:59:05.910 INFO  FastaAlternateReferenceMaker - Picard Version: 2.25.4
+17:59:05.910 INFO  FastaAlternateReferenceMaker - Built for Spark Version: 2.4.5
+17:59:05.910 INFO  FastaAlternateReferenceMaker - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+17:59:05.910 INFO  FastaAlternateReferenceMaker - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+17:59:05.910 INFO  FastaAlternateReferenceMaker - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+17:59:05.910 INFO  FastaAlternateReferenceMaker - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+17:59:05.910 INFO  FastaAlternateReferenceMaker - Deflater: IntelDeflater
+17:59:05.911 INFO  FastaAlternateReferenceMaker - Inflater: IntelInflater
+17:59:05.911 INFO  FastaAlternateReferenceMaker - GCS max retries/reopens: 20
+17:59:05.911 INFO  FastaAlternateReferenceMaker - Requester pays: disabled
+17:59:05.911 INFO  FastaAlternateReferenceMaker - Initializing engine
+17:59:08.905 INFO  FeatureManager - Using codec VCFCodec to read file file:///vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/allhqSNPmm80_phylo.recode.vcf
+17:59:11.404 INFO  FastaAlternateReferenceMaker - Done initializing engine
+17:59:11.423 INFO  ProgressMeter - Starting traversal
+17:59:11.423 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Bases Processed     Bases/Minute
+17:59:21.424 INFO  ProgressMeter - scaffold12187|size5334:4431              0.2              36826000      220956000.0
+17:59:31.423 INFO  ProgressMeter - scaffold146840|size1587:610              0.3              74954000      224862000.0
+17:59:41.424 INFO  ProgressMeter - scaffold177188|size1400:43              0.5             116692000      233384000.0
+17:59:51.423 INFO  ProgressMeter - scaffold212078|size1226:860              0.7             158401000      237601500.0
+18:00:01.423 INFO  ProgressMeter - scaffold251869|size1062:411              0.8             199847000      239816400.0
+18:00:11.423 INFO  ProgressMeter - scaffold298525|size902:782              1.0             242094000      242094000.0
+18:00:21.423 INFO  ProgressMeter - scaffold35493|size3254:1494              1.2             283434000      242943428.6
+18:00:31.423 INFO  ProgressMeter - scaffold427814|size590:169              1.3             325522000      244141500.0
+18:00:41.423 INFO  ProgressMeter - scaffold57378|size2625:1524              1.5             368687000      245791333.3
+18:00:51.423 INFO  ProgressMeter - scaffold79741|size2242:387              1.7             413396000      248037600.0
+18:01:01.293 INFO  ProgressMeter - NODE_10697_length_100_cov_12687:35              1.8             456647265      249377312.1
+18:01:01.293 INFO  ProgressMeter - Traversal complete. Processed 456647265 total bases in 1.8 minutes.
+18:01:01.295 INFO  FastaAlternateReferenceMaker - Shutting down engine
+[December 2, 2021 at 6:01:01 PM EST] org.broadinstitute.hellbender.tools.walkers.fasta.FastaAlternateReferenceMaker done. Elapsed time: 1.93 minutes.
+Runtime.totalMemory()=10745806848

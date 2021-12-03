@@ -1,0 +1,36 @@
+Using GATK jar /vortexfs1/home/efachon/.conda/envs/gatk4/share/gatk4-4.2.3.0-1/gatk-package-4.2.3.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /vortexfs1/home/efachon/.conda/envs/gatk4/share/gatk4-4.2.3.0-1/gatk-package-4.2.3.0-local.jar SelectVariants -R /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1_nocommas.fa -O /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/sample_text.vcf -V /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/allhqSNPmm80_phylo.recode.vcf -sn /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/SRR7236013.nodups.bam
+06:53:10.336 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/vortexfs1/home/efachon/.conda/envs/gatk4/share/gatk4-4.2.3.0-1/gatk-package-4.2.3.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Dec 03, 2021 6:53:10 AM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+06:53:10.624 INFO  SelectVariants - ------------------------------------------------------------
+06:53:10.624 INFO  SelectVariants - The Genome Analysis Toolkit (GATK) v4.2.3.0
+06:53:10.624 INFO  SelectVariants - For support and documentation go to https://software.broadinstitute.org/gatk/
+06:53:10.624 INFO  SelectVariants - Executing as efachon@pn073 on Linux v3.10.0-693.2.2.el7.x86_64 amd64
+06:53:10.625 INFO  SelectVariants - Java runtime: OpenJDK 64-Bit Server VM v11.0.9.1-internal+0-adhoc..src
+06:53:10.625 INFO  SelectVariants - Start Date/Time: December 3, 2021 at 6:53:10 AM EST
+06:53:10.625 INFO  SelectVariants - ------------------------------------------------------------
+06:53:10.625 INFO  SelectVariants - ------------------------------------------------------------
+06:53:10.625 INFO  SelectVariants - HTSJDK Version: 2.24.1
+06:53:10.625 INFO  SelectVariants - Picard Version: 2.25.4
+06:53:10.625 INFO  SelectVariants - Built for Spark Version: 2.4.5
+06:53:10.626 INFO  SelectVariants - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+06:53:10.626 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+06:53:10.626 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+06:53:10.626 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+06:53:10.626 INFO  SelectVariants - Deflater: IntelDeflater
+06:53:10.626 INFO  SelectVariants - Inflater: IntelInflater
+06:53:10.626 INFO  SelectVariants - GCS max retries/reopens: 20
+06:53:10.626 INFO  SelectVariants - Requester pays: disabled
+06:53:10.626 INFO  SelectVariants - Initializing engine
+06:53:13.861 INFO  FeatureManager - Using codec VCFCodec to read file file:///vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/allhqSNPmm80_phylo.recode.vcf
+06:53:18.006 INFO  SelectVariants - Done initializing engine
+06:53:18.968 INFO  SelectVariants - Including sample '/vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/SRR7236013.nodups.bam'
+06:53:20.718 INFO  ProgressMeter - Starting traversal
+06:53:20.718 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+06:53:21.199 INFO  ProgressMeter - scaffold80874|size2225:802              0.0                  5658         707250.0
+06:53:21.199 INFO  ProgressMeter - Traversal complete. Processed 5658 total variants in 0.0 minutes.
+06:53:21.463 INFO  SelectVariants - Shutting down engine
+[December 3, 2021 at 6:53:21 AM EST] org.broadinstitute.hellbender.tools.walkers.variantutils.SelectVariants done. Elapsed time: 0.19 minutes.
+Runtime.totalMemory()=6106906624
