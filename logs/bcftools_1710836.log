@@ -1,0 +1,19 @@
+
+
+Error: Unknown option: --kept-site
+
+
+VCFtools - 0.1.14
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/HQ_snps_cp.vcf
+	--recode-INFO-all
+	--out mm80subset
+	--recode
+	--remove-indels
+	--bed /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/mm80_filter.bed
+
+After filtering, kept 47 out of 47 Individuals
+Outputting VCF file...
+Error: Could not open BED file: /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/mm80_filter.bed
