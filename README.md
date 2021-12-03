@@ -14,35 +14,69 @@ Code associated with this project, including all scripts used for data cleaning,
  - data/
    * project-PRJNA473816-metadata.csv
      - _project metadata from NCBI_
+   * supp_table_1.csv
+     - _Supplemental table 1 from Reich et al. (2021) paper, containing sample metadata_
+   * seq_access_nums.txt
+     - _List of SRA accession numbers for 47 sequences re-analyzed here_
    * sra/
-     - _47 raw sequences (forward and reverse) from "shallow" reads_
+     - _47 raw sequences (forward and reverse) from "shallow" reads, not included on github due to file size_
+     - _download using load_seqs.txt script and seq_access_nums.txt file_
    * genome/
-     - _published draft genome for _S. 'fitti'_ from same study_
+     - _draft genome for_ S. 'fitti' _from same study, not included on github due to file size_
+     - _available for download at <https://doi.org/10.5061/dryad.xgxd254g8>_
  - envs/
-   * XXXXXX
-     - [SOMETHING WITH SRA-TOOLS, ETC. FOR PRE-SNP STUFF]
+   * trim_clean_call_snips.yml
+     - _yaml file to load conda envs for seq trimming and aligning, and SNP ID and filtering_
    * analyze_snps.yml
-     - 
-   * call_snps.yml
-     -
+     - _yaml file to load conda envs for SNP analysis_
  - figures
    * Fig2_JBW.pdf
    * 
    * 
  - jupyter-notebooks/
    * data-download.ipynb
-     - 
+     - ...
    * dino_popgen_final_writeup.ipynb
-     - 
+     - ...
    * trimlog_ext.ipynb
-     -
+     - ...
    * figure-2_JBW.Rmd
      - _R code for (re-)creation of figure 2_
  - logs/
    * _log files from HPC sbatch runs_
- - output/
-   * supp_table_1.csv
-     - _Supp table 1, with sample metadata_
+ - scripts/
+   * load-seqs/
+     - load_seqs.txt # MIGHT MOVE INTO MAIN FOLDER
+     - seq_access_missing.txt #	MIGHT DELETE
+     - seq_access_nums_short.txt # MIGHT DELETE
+   * zip.txt
+     - _script to zip files so they take up less space_
+   * trim.txt
+     - _script to trim sequences using cutadapt_
+   * call_filter_snps/
+     - mpileup.txt
+     - bcftools_run.txt
+     - bcftools_filter.txt
+     - bcftools_view.txt
+     - vcftools_filter.txt
+   * samtools_seqs.txt
+   * mpileup.txt
+   * snp_id.txt
+   * align_seqs.txt
+     - _script to align trimmed seqs to draft genome_
+   * phylogeny/
+     - vcftools_filter_phylo.txt
+     - vcftools_consensus.txt
+     - vcf2msa/
+       > vcf2msa.py
+       > mpileup_all.txt
+       > mpileup_all_*.log [SHOULD PROBS MOVE TO LOGS FOLDER]
+       > vcf2msa_run.txt
+   * bayescan/
+     - ...
+   * proc_for_vcf-seq-order.txt
+     - _text file explaining bash and R code used to subset and re-order metadata table to match sample order in allhqSNPmm80.recode.vcf_
+- output/
    * supp_table_subset.csv
      - _Supp table 1, subset with only the 47 samples re-analyzed here_
    * supp_table_ordered.csv
@@ -57,41 +91,3 @@ Code associated with this project, including all scripts used for data cleaning,
      - _SNP data (output from bcftools)_
    * phylogeny/
      - [EVIE SHOULD ENTER A BRIEF SUMMARY... ALSO SHOULD THIS BE IN ANALYSIS OUTPUT?]
- - scripts/
-   * load-seqs/
-     - load_seqs.txt
-     - one_num.txt #MAYBE DELETE EXCESS FILES??
-     - seq_access_missing.txt
-     - seq_access_nums_short.txt
-     - seq_access_nums.txt
-   * zip.txt
-     - _script to zip files so they take up less space_
-   * trim.txt
-     - _script to trim sequences using cutadapt_
-   * bwa_index.txt
-     - 
-   * align_seqs.txt
-     - _script to align trimmed seqs to draft genome_
-   * samtools_seqs.txt
-     - _script to..._
-   * mpileup.txt
-     - _script to..._
-   * snp_id.txt
-     - _script to..._
-   * bayescan.txt
-     - _script to..._
-   * call_filter_snps/
-     - mpileup.txt
-     - bcftools_run.txt
-     - bcftools_filter.txt
-     - bcftools_view.txt
-     - vcftools_filter.txt
-   * phylogeny/
-     - vcftools_filter_phylo.txt
-     - vcftools_consensus.txt
-     - vcf2msa/
-       > vcf2msa.py
-       > mpileup_all.txt
-       > mpileup_all_*.log [SHOULD PROBS MOVE TO LOGS FOLDER]
-       > vcf2msa_run.txt
-
