@@ -25,7 +25,7 @@ Code associated with this project, including all scripts used for data cleaning,
      - _draft genome for_ S. 'fitti' _from same study, not included on github due to file size_
      - _available for download at <https://doi.org/10.5061/dryad.xgxd254g8>_
  - envs/
-   * trim_clean_call_snips.yml
+   * trim_clean_call_snps.yml
      - _yaml file to load conda envs for seq trimming and aligning, and SNP ID and filtering_
    * analyze_snps.yml
      - _yaml file to load conda envs for SNP analysis_
@@ -68,10 +68,10 @@ Code associated with this project, including all scripts used for data cleaning,
      - vcftools_filter_phylo.txt
      - vcftools_consensus.txt
      - vcf2msa/
-       > vcf2msa.py
-       > mpileup_all.txt
-       > mpileup_all_*.log [SHOULD PROBS MOVE TO LOGS FOLDER]
-       > vcf2msa_run.txt
+       * vcf2msa.py
+       * mpileup_all.txt
+       * mpileup_all_*.log [SHOULD PROBS MOVE TO LOGS FOLDER]
+       * vcf2msa_run.txt
    * bayescan/
      - ...
    * proc_for_vcf-seq-order.txt
