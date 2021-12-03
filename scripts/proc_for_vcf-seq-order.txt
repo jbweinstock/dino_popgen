@@ -1,0 +1,35 @@
+IN BASH...
+
+First, grep for CHROM in the .vcf file and use tr to go from one gigantic line to a list:
+	# this was based on advice from Carolyn that the header (starting with CHROM) had the necessary info)
+
+	grep CHROM allhqSNPmm80.recode.vcf | tr [:space:] '\n' > [INTERMEDIATE-FILE]
+		# the '\n' is for a new line
+
+Then, I went into [INTERMEDIATE-FILE] and manually deleted the top few lines before the list of sequence numbers
+
+Then, cut out just the SRR numbers...
+
+	cut -d '/' -f9 vcf_chrom_head.txt | cut -d '.' -f1 > vcf_seq_order.txt
+		# the first part cuts out the [SRR-num].nodups.bam
+		# the second part cuts out just the [SRR-number] and saves it to a new file
+
+
+IN R....
+
+	seq_order = read.csv("vcf_seq_order.txt",sep='\n',header=F)
+	seq_order$index = seq(1:47)
+
+	poptab$index = NA
+	for (i in 1:47){
+  		for (k in 1:47){
+    			if(poptab$NCBI_SRA_Accesion[i]==seq_order$V1[k]){
+      				poptab$index[i] = seq_order$index[k]
+    			}
+  		}
+	}
+
+	poptab_ordered = poptab[order(poptab$index),]
+
+Then I saved this new file onto Poseidon (with the index column, so you can double check that it looks OK!)
+
