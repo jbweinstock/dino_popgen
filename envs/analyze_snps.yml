@@ -1,0 +1,8 @@
+name: analyze_snps
+channels:
+  - defaults
+dependencies:
+  - bayescan=2.1
+  - pcadapt=4.3.3
+prefix: /vortexfs1/home/crzucidlo/.conda/envs/analyze_snps
+

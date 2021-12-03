@@ -1,0 +1,9 @@
+name: trim_clean_call_snps
+channels:
+  - defaults
+dependencies:
+  - cutadapt=2.6
+  - bwa=0.7.15
+  - samtools=1.13
+  - vcftools=0.1.14
+prefix: /vortexfs1/home/crzucidlo/.conda/envs/trim_clean_call_snps
