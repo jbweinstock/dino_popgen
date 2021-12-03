@@ -1,0 +1,93 @@
+Using GATK jar /vortexfs1/home/efachon/.conda/envs/gatk4/share/gatk4-4.2.3.0-1/gatk-package-4.2.3.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /vortexfs1/home/efachon/.conda/envs/gatk4/share/gatk4-4.2.3.0-1/gatk-package-4.2.3.0-local.jar SelectVariants -R /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1_nocommas.fa -O /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/SRR7236013_int.vcf -V /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/allhqSNPmm80_phylo.recode.vcf -sn /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/SRR7236013.nodups.bam
+10:03:51.722 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/vortexfs1/home/efachon/.conda/envs/gatk4/share/gatk4-4.2.3.0-1/gatk-package-4.2.3.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Dec 03, 2021 10:03:51 AM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+10:03:51.839 INFO  SelectVariants - ------------------------------------------------------------
+10:03:51.839 INFO  SelectVariants - The Genome Analysis Toolkit (GATK) v4.2.3.0
+10:03:51.839 INFO  SelectVariants - For support and documentation go to https://software.broadinstitute.org/gatk/
+10:03:51.839 INFO  SelectVariants - Executing as efachon@pn073 on Linux v3.10.0-693.2.2.el7.x86_64 amd64
+10:03:51.840 INFO  SelectVariants - Java runtime: OpenJDK 64-Bit Server VM v11.0.9.1-internal+0-adhoc..src
+10:03:51.840 INFO  SelectVariants - Start Date/Time: December 3, 2021 at 10:03:51 AM EST
+10:03:51.840 INFO  SelectVariants - ------------------------------------------------------------
+10:03:51.840 INFO  SelectVariants - ------------------------------------------------------------
+10:03:51.840 INFO  SelectVariants - HTSJDK Version: 2.24.1
+10:03:51.840 INFO  SelectVariants - Picard Version: 2.25.4
+10:03:51.840 INFO  SelectVariants - Built for Spark Version: 2.4.5
+10:03:51.841 INFO  SelectVariants - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+10:03:51.841 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+10:03:51.841 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+10:03:51.841 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+10:03:51.841 INFO  SelectVariants - Deflater: IntelDeflater
+10:03:51.841 INFO  SelectVariants - Inflater: IntelInflater
+10:03:51.841 INFO  SelectVariants - GCS max retries/reopens: 20
+10:03:51.841 INFO  SelectVariants - Requester pays: disabled
+10:03:51.841 INFO  SelectVariants - Initializing engine
+10:03:54.892 INFO  FeatureManager - Using codec VCFCodec to read file file:///vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/allhqSNPmm80_phylo.recode.vcf
+10:03:59.026 INFO  SelectVariants - Done initializing engine
+10:03:59.980 INFO  SelectVariants - Including sample '/vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/SRR7236013.nodups.bam'
+10:04:01.962 INFO  ProgressMeter - Starting traversal
+10:04:01.962 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+10:04:02.492 INFO  ProgressMeter - scaffold80874|size2225:802              0.0                  5658         640528.3
+10:04:02.493 INFO  ProgressMeter - Traversal complete. Processed 5658 total variants in 0.0 minutes.
+10:04:02.820 INFO  SelectVariants - Shutting down engine
+[December 3, 2021 at 10:04:02 AM EST] org.broadinstitute.hellbender.tools.walkers.variantutils.SelectVariants done. Elapsed time: 0.19 minutes.
+Runtime.totalMemory()=10146021376
+INFO	2021-12-03 10:04:03	RenameSampleInVcf	
+
+********** NOTE: Picard's command line syntax is changing.
+**********
+********** For more information, please see:
+********** https://github.com/broadinstitute/picard/wiki/Command-Line-Syntax-Transition-For-Users-(Pre-Transition)
+**********
+********** The command line looks like this in the new syntax:
+**********
+**********    RenameSampleInVcf -INPUT /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/SRR7236013_int.vcf -OUTPUT /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/SRR7236013.vcf -NEW_SAMPLE_NAME SRR7236013
+**********
+
+
+10:04:03.506 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/vortexfs1/omics/env-bio/collaboration/dino_popgen/scripts/phylogeny/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Dec 03 10:04:03 EST 2021] RenameSampleInVcf INPUT=/vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/SRR7236013_int.vcf OUTPUT=/vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/SRR7236013.vcf NEW_SAMPLE_NAME=SRR7236013    VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+[Fri Dec 03 10:04:03 EST 2021] Executing as efachon@pn073 on Linux 3.10.0-693.2.2.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.9.1-internal+0-adhoc..src; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: 2.26.6
+[Fri Dec 03 10:04:06 EST 2021] picard.vcf.RenameSampleInVcf done. Elapsed time: 0.05 minutes.
+Runtime.totalMemory()=6962544640
+Using GATK jar /vortexfs1/home/efachon/.conda/envs/gatk4/share/gatk4-4.2.3.0-1/gatk-package-4.2.3.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /vortexfs1/home/efachon/.conda/envs/gatk4/share/gatk4-4.2.3.0-1/gatk-package-4.2.3.0-local.jar FastaAlternateReferenceMaker -R /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1_nocommas.fa -O /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/SRR7236013.fa -V /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/SRR7236013.vcf
+10:04:08.200 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/vortexfs1/home/efachon/.conda/envs/gatk4/share/gatk4-4.2.3.0-1/gatk-package-4.2.3.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Dec 03, 2021 10:04:08 AM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+10:04:08.315 INFO  FastaAlternateReferenceMaker - ------------------------------------------------------------
+10:04:08.315 INFO  FastaAlternateReferenceMaker - The Genome Analysis Toolkit (GATK) v4.2.3.0
+10:04:08.315 INFO  FastaAlternateReferenceMaker - For support and documentation go to https://software.broadinstitute.org/gatk/
+10:04:08.315 INFO  FastaAlternateReferenceMaker - Executing as efachon@pn073 on Linux v3.10.0-693.2.2.el7.x86_64 amd64
+10:04:08.315 INFO  FastaAlternateReferenceMaker - Java runtime: OpenJDK 64-Bit Server VM v11.0.9.1-internal+0-adhoc..src
+10:04:08.316 INFO  FastaAlternateReferenceMaker - Start Date/Time: December 3, 2021 at 10:04:08 AM EST
+10:04:08.316 INFO  FastaAlternateReferenceMaker - ------------------------------------------------------------
+10:04:08.316 INFO  FastaAlternateReferenceMaker - ------------------------------------------------------------
+10:04:08.316 INFO  FastaAlternateReferenceMaker - HTSJDK Version: 2.24.1
+10:04:08.316 INFO  FastaAlternateReferenceMaker - Picard Version: 2.25.4
+10:04:08.316 INFO  FastaAlternateReferenceMaker - Built for Spark Version: 2.4.5
+10:04:08.317 INFO  FastaAlternateReferenceMaker - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+10:04:08.317 INFO  FastaAlternateReferenceMaker - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+10:04:08.317 INFO  FastaAlternateReferenceMaker - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+10:04:08.317 INFO  FastaAlternateReferenceMaker - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+10:04:08.317 INFO  FastaAlternateReferenceMaker - Deflater: IntelDeflater
+10:04:08.317 INFO  FastaAlternateReferenceMaker - Inflater: IntelInflater
+10:04:08.317 INFO  FastaAlternateReferenceMaker - GCS max retries/reopens: 20
+10:04:08.317 INFO  FastaAlternateReferenceMaker - Requester pays: disabled
+10:04:08.317 INFO  FastaAlternateReferenceMaker - Initializing engine
+10:04:11.289 INFO  FeatureManager - Using codec VCFCodec to read file file:///vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/SRR7236013.vcf
+10:04:14.204 INFO  FastaAlternateReferenceMaker - Done initializing engine
+10:04:14.217 INFO  ProgressMeter - Starting traversal
+10:04:14.218 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Bases Processed     Bases/Minute
+10:04:14.345 INFO  FastaAlternateReferenceMaker - Shutting down engine
+[December 3, 2021 at 10:04:14 AM EST] org.broadinstitute.hellbender.tools.walkers.fasta.FastaAlternateReferenceMaker done. Elapsed time: 0.10 minutes.
+Runtime.totalMemory()=6681526272
+***********************************************************************
+
+A USER ERROR has occurred: Input /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/SRR7236013.vcf must support random access to enable queries by interval. If it's a file, please index it using the bundled tool IndexFeatureFile
+
+***********************************************************************
+Set the system property GATK_STACKTRACE_ON_USER_EXCEPTION (--java-options '-DGATK_STACKTRACE_ON_USER_EXCEPTION=true') to print the stack trace.

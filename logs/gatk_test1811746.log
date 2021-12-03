@@ -1,0 +1,28 @@
+/cm/local/apps/slurm/var/spool/job1811746/slurm_script: line 18: gatk: command not found
+INFO	2021-12-03 10:00:32	RenameSampleInVcf	
+
+********** NOTE: Picard's command line syntax is changing.
+**********
+********** For more information, please see:
+********** https://github.com/broadinstitute/picard/wiki/Command-Line-Syntax-Transition-For-Users-(Pre-Transition)
+**********
+********** The command line looks like this in the new syntax:
+**********
+**********    RenameSampleInVcf -INPUT /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/SRR7236013_int.vcf -OUTPUT /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/SRR7236013.vcf -NEW_SAMPLE_NAME SRR7236013
+**********
+
+
+10:00:32.719 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/vortexfs1/omics/env-bio/collaboration/dino_popgen/scripts/phylogeny/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Dec 03 10:00:32 EST 2021] RenameSampleInVcf INPUT=/vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/SRR7236013_int.vcf OUTPUT=/vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/SRR7236013.vcf NEW_SAMPLE_NAME=SRR7236013    VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+[Fri Dec 03 10:00:32 EST 2021] Executing as efachon@pn073 on Linux 3.10.0-693.2.2.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 1.8.0_171-b10; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: 2.26.6
+[Fri Dec 03 10:00:32 EST 2021] picard.vcf.RenameSampleInVcf done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2058354688
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot read non-existent file: file:///vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/SRR7236013_int.vcf
+	at htsjdk.samtools.util.IOUtil.assertFileIsReadable(IOUtil.java:498)
+	at htsjdk.samtools.util.IOUtil.assertFileIsReadable(IOUtil.java:485)
+	at picard.vcf.RenameSampleInVcf.doWork(RenameSampleInVcf.java:110)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+/cm/local/apps/slurm/var/spool/job1811746/slurm_script: line 20: gatk: command not found
