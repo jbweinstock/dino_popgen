@@ -119,4 +119,44 @@ do
         fasterq-dump --split-3 --verbose -O data/sra/ $seq #retrieve SRA data
 done
 ```
+### Cleaning and Trimming
+The cutadapt package (version 2.6) was used to trim and clean reads. This process was well-specified for the methods related to reference genome assembly in the paper, but not for individual samples; methods outlined for the reference genome were followed as closely as possible. Cutadapt 1.6 was specified in the paper but was not available through Bioconda, we decided to download the latest version.
+```
+for seq in $(cat ${1}) #input is a textfile with list of accession numbers
+do
+        cutadapt -m 50 -q 25 --trim-n -o data/trim-data/${seq}_1_out.fasta.gz -p data/trim-data/${seq}_2_out.fasta.gz data/sra/${seq}_1.fastq.gz data/sra/${seq}_2.fastq.gz #trim n's, phred score threshold of 25, minimum length of 50 bp
+done
+```
+At this point it was discovered that one of the sequences (SRR7235991) did not download properly during the initial fasterq-dump; this sequence was redownloaded and trimmed separately. A python script was used to extract some relevant statistics from the trim log. The average percent of pairs written was 98.7%, and number of pairs written ranged from ~10 million to ~39 million.  
+#### Alignment
+The Burrows-Wheeler Aligner (BWA) package (version 0.7.15) was used to index the reference genome and align the sequences. Alignment was run with the bwa mem function on 16 threads.
+```
+bwa index /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa #index reference
+#align each sample file, 16 threads
+for seq in $(cat ${1})
+do
+        bwa mem -t 16 /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/trim-data/${seq}_1_out.fasta.gz /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/trim-data/${seq}_2_out.fasta.gz > data/align-data/${seq}.sam 
+done
+```
+Samtools and bcftools (both version 1.4.1) were installed and used to further process the sequences.  
+Samtools view was used to convert sam files to bam format in order to save space on the HPC. Then, the .bam files were sorted and indexed so the PCR duplicates could be removed with samtools rmdup. Now that duplicates are removed, this .bam file was used in downstream analyses. Additioanlly, the .bam files were indexed again and samtools flagstat used to calculate alignment statistics. *Add part about python code to run through stats?*
+### SNP Calling and Filtering
+The samtools mpileup function was used to create a single pileup bcf file from all bam files. The resulting bcf file was run through bcftools call in order to call variants and produce a vcf output file. All flags used for these functions were documented clearly in the methods section of the paper.  
+```
+#create a bcf pileup
+samtools mpileup -ugAEf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa -t AD,DP /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/*.bam > /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/symb_mpileup.bcf
+#call variants
+bcftools call -f GQ -vmO z --ploidy 1 -o symb_mpileup.vcf.gz /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/symb_mpileup.bcf
+```
+At this point, we tried to run bcftools view to identify snps but the program threw an error when loading shared libraries. We chose to update bcftools to the current version (1.9) to proceed. The output of bcftools view was run with bcftools filter function in order to isolate only the high-quality variants (quality score >200). An additional filtering step was conducted with vcftools filter, which removed all sites with >20% missing data as well as indels. While flags related to bcftools were noted in the paper, the vcftools operation was not documented in the manuscript. The github repository included information on the vcftools operations, however the version noted in the github (0.1.13) was not available through bioconda so we opted to download the next available version (0.1.14). Interestingly, the github also included a bed file to be used with vcftools, but there was no documentation on how these files were created. After consultation, we decided to move forward without the bed file, as it seemed its primary purpose was to mask out coinfected S. fitti, which we had already subsetted out early in our analysis process.  
+```
+#identify snps
+bcftools view -O v --threads 8 -m2 -M2 -v snps -o /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/snpview_symb_mpileup.vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/symb_mpileup.vcf
+#filter out medium and low-quality snps
+bcftools filter -i 'QUAL >= 200' --threads 8 -O v -o /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/HQ_snps.vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/snpview_symb_mpileup.vcf
+#filter out sites with >20% missing data and indels
+vcftools --vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/HQ_snps_cp.vcf --max-missing 0.8 --recode --remove-indels --out allhqSNPmm80
+```
+The final vcf file contained 57,800 loci, closely matching the 58,000 that were identified in the paper. One reason that we may have identified less snps than the manuscript is that we chose to omit a single large file from our analysis. These final SNPs were used as inputs for the respective downstream analyses.
+
 
