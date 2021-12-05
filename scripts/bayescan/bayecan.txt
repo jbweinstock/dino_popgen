@@ -12,9 +12,13 @@
 #export OMP_NUM_THREADS=16
 
 # run from dino_popgen/
-# uses BayeScan on files created using vcf2bayescan.pl 
+# uses BayeScan 2.1 on files created using vcf2bayescan.pl 
 # usage: scripts/bayescan/bayescan.txt
 
+# first input is BayeScan itself, next is the input file (from vcf2bayescan.pl) that is the vcf converted into bayescan while taking population info into account, -snp tells BayeScan the data is in the form of snps, -od gives the output directory, -o is the prefix of the output (because there will be 6 ouptut files), -out_pilot creates a file with info on the pilot runs, -out_freq creates a file for allele frequencies
+# input host file as population info
 scripts/bayescan/BayeScan2.1/binaries/BayeScan2.1_linux64bits scripts/bayescan/host.txt -snp -od output/seq_outliers/ -o host -out_pilot -out_freq
+# input location file as population info
 scripts/bayescan/BayeScan2.1/binaries/BayeScan2.1_linux64bits scripts/bayescan/loc.txt -snp -od output/seq_outliers/ -o loc -out_pilot -out_freq
+# input interaction of host and location file as population info
 scripts/bayescan/BayeScan2.1/binaries/BayeScan2.1_linux64bits scripts/bayescan/hostXloc.txt -snp -od output/seq_outliers/ -o hostXloc -out_pilot -out_freq
