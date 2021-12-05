@@ -1,0 +1,47 @@
+H_VI_13736	Hybrid US Virgin Islands
+H_VI_13706	Hybrid US Virgin Islands
+H_VI_13704	Hybrid US Virgin Islands
+H_BE_13833	Hybrid Belize
+H_BE_13823	Hybrid Belize
+P_CU_14472	A. palmata Curacao
+H_VI_13762	Hybrid US Virgin Islands
+H_BE_13821	Hybrid Belize
+H_BE_13782	Hybrid Belize
+H_VI_1835	Hybrid US Virgin Islands
+H_VI_1834	Hybrid US Virgin Islands
+P_FL_2655	A. palmata Florida
+P_FL_1037	A. palmata Florida
+P_CU_3070	A. palmata Curacao
+P_CU_3071	A. palmata Curacao
+P_CU_13933	A. palmata Curacao
+P_CU_13919	A. palmata Curacao
+C_VI_13696	A. cervicornis US Virgin Islands
+C_FL_4960	A. cervicornis Florida
+C_FL_4959	A. cervicornis Florida
+C_FL_4927	A. cervicornis Florida
+C_FL_4923	A. cervicornis Florida
+C_CU_13925	A. cervicornis Curacao
+H_VI_13764	Hybrid US Virgin Islands
+C_VI_13714	A. cervicornis US Virgin Islands
+C_VI_13712	A. cervicornis US Virgin Islands
+H_VI_1837	Hybrid US Virgin Islands
+P_FL_6895	A. palmata Florida
+H_BE_13807	Hybrid Belize
+P_FL_2699	A. palmata Florida
+P_FL_5524	A. palmata Florida
+H_BE_6779	Hybrid Belize
+P_BE_13819	A. palmata Belize
+P_BE_5993	A. palmata Belize
+C_VI_13758	A. cervicornis US Virgin Islands
+BP_BA_1667	Hybrid Bahamas
+H_FL_1302	Hybrid Florida
+C_BE_8867	A. cervicornis Belize
+C_BE_13837	A. cervicornis Belize
+C_CU_13903	A. cervicornis Curacao
+C_CU_13901	A. cervicornis Curacao
+C_BE_13792	A. cervicornis Belize
+C_BE_13827	A. cervicornis Belize
+C_BE_13797	A. cervicornis Belize
+H_BE_13778	Hybrid Belize
+C_CU_13905	A. cervicornis Curacao
+BP_VI_1839	Hybrid US Virgin Islands

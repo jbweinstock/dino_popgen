@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#SBATCH --partition=scavenger
+#SBATCH --job-name=bayescan_hostXloc
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=crzucidlo@whoi.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=16
+#SBATCH --mem=180G
+#SBATCH --time=10:00:00
+#SBATCH --output=bayescan_hostXloc_%j.log
+#export OMP_NUM_THREADS=16
+
+# run from dino_popgen/
+# usage: scripts/bayescan/bayescan_slurm.txt
+
+scripts/bayescan/BayeScan2.1/binaries/BayeScan2.1_linux64bits scripts/bayescan/hostXloc_aug19.txt -snp -od output/seq_outliers/ -o loc -out_pilot -out_freq
