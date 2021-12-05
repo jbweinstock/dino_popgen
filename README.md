@@ -32,7 +32,7 @@ Code associated with this project, including all scripts used for data cleaning,
  - figures
    * Fig2_JBW.pdf
    * 
-   * 
+   * Fig_5_manhattanplot_total.pdf
  - jupyter-notebooks/
    * data-download.ipynb
      - ...
@@ -40,8 +40,14 @@ Code associated with this project, including all scripts used for data cleaning,
      - ...
    * trimlog_ext.ipynb
      - ...
+   * BayeScan_outliers.ipynb
+     -_R code to pull outliers from BayeScan output_
+   * PCAdapt_outliers.ipynb
+     -_R code to find outliers in .vcf file using PCAdapt AND compare BayeScan to PCAdapt_
    * figure-2_JBW.Rmd
      - _R code for (re-)creation of figure 2_
+   * figure-5_CLR.Rmd
+     - _R code for (re-)creation of figure 5_
  - logs/
    * _log files from HPC sbatch runs_
  - scripts/
@@ -73,7 +79,11 @@ Code associated with this project, including all scripts used for data cleaning,
        * mpileup_all_*.log [SHOULD PROBS MOVE TO LOGS FOLDER]
        * vcf2msa_run.txt
    * bayescan/
-     - ...
+     - BayeScan2.1/
+       * binaries/
+       * source/
+     - bayescan.txt
+     - vcf2bayescan.pl
    * proc_for_vcf-seq-order.txt
      - _text file explaining bash and R code used to subset and re-order metadata table to match sample order in allhqSNPmm80.recode.vcf_
 - output/
@@ -91,3 +101,12 @@ Code associated with this project, including all scripts used for data cleaning,
      - _SNP data (output from bcftools)_
    * phylogeny/
      - [EVIE SHOULD ENTER A BRIEF SUMMARY... ALSO SHOULD THIS BE IN ANALYSIS OUTPUT?]
+   * seq_outliers/
+     - _output from BayeScan: _fst.txt, .sel
+     - bayescan_outliers_clean.txt
+     - snp_under_sel_methods_OVERLAP.txt
+     - hostXloc_bayes_stats.txt
+     - host_bayes_stats.txt
+     - location_bayes_stats.txt
+     - outliersONLY_PCADAPT.txt
+     - PCADAPT_ALLvalues.txt
