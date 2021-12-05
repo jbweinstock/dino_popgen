@@ -12,7 +12,7 @@
 #export OMP_NUM_THREADS=8
 
 #run from dino_popgen/ root directory
-#gave 24 hrs & 180G mem
+#gave 4 hrs & 40G mem
 #USAGE: sbatch scripts/phylogeny/vcftools_filter_phylo.txt 
 
 #use vcftools to filter out only snps with no missing data from the high quality SNP file
