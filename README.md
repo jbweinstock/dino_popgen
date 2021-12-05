@@ -66,7 +66,7 @@ Code associated with this project, including all scripts used for data cleaning,
      - bcftools_view.txt
      - vcftools_filter.txt
    * samtools_seqs.txt
-    - _convert .sam files to .bam, remove PCR duplicates, and get alignment stats_
+     - _convert .sam files to .bam, remove PCR duplicates, and get alignment stats_
    * mpileup.txt
    * snp_id.txt
    * align_seqs.txt
