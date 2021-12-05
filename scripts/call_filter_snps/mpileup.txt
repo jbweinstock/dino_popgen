@@ -13,6 +13,14 @@
 
 #run from dino_popgen/ root directory
 #gave 24 hrs & 180G mem
-#USAGE: sbatch scripts/mpileup.txt 
+#USAGE: sbatch scripts/call_filter_snps/mpileup.txt 
+#requires samtools (v1.4.1 here) in active conda env
 
 samtools mpileup -ugAEf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa -t AD,DP /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/*.nodups.bam > /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/symb_mpileup.bcf
+#create single pileup  bcf file from all bam file; flags taken from Reich et al (2021) methods / github
+#flags -u and -g produce vcf and bcf output (NOTE: deprecated feature!)
+#flag -A says to not discard anomalous read pairs
+#flag -E says to ignore existing BQs and recalculate BAQ on the fly
+#flag -f points to reference genome
+#flag -t AD,DP says to add allelic depth (AD) and number of high quality bases (DP) into output (NOTE: flag may not exist in newer versions of samtools? missing from current manual)
+#send output to new folder output/snp_calling/
