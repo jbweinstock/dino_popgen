@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#SBATCH --partition=scavenger
+#SBATCH --job-name=vcftools_filter_phylo
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=efachon@whoi.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=40G
+#SBATCH --time=00:04:00
+#SBATCH --output=vcftools_phylo%j.log
+#export OMP_NUM_THREADS=8
+
+#run from dino_popgen/ root directory
+#gave 24 hrs & 180G mem
+#USAGE: sbatch scripts/phylogeny/vcftools_filter_phylo.txt 
+
+#use vcftools to filter out only snps with no missing data from the high quality SNP file
+vcftools --vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/HQ_snps_cp.vcf --max-missing 1.0 --recode --remove-indels --out allhqSNPmm80_phylo
