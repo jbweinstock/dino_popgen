@@ -13,14 +13,25 @@
 
 #run from dino_popgen/ root directory
 #gave 24 hrs & 180G mem
-#USAGE: sbatch scripts/samtools_seqs.txt scripts/load-seqs/seq_access_nums.txt
+#USAGE: sbatch scripts/samtools_seqs.txt data/seq_access_nums.txt
+#requires samtools (v1.4.1 here) in active conda env
 
-for seq in $(cat ${1})
+for seq in $(cat ${1}) #for each sequence in provided text file
 do
-        samtools view -bT /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/$seq.sam > /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/$seq.bam  
-	samtools sort /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/$seq.bam -o /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/$seq.sorted.bam
-        samtools index -b /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/$seq.sorted.bam
-        samtools rmdup /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/$seq.sorted.bam /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/$seq.nodups.bam
-        samtools index -b /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/$seq.nodups.bam
-        samtools flagstat /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/$seq.nodups.bam > $seq.align.stats.txt
+        samtools view -bT /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/align-data/$seq.sam > /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/align-data/$seq.bam 
+	#convert .sam to .bam files to save space on HPC
+	#flag -T refers to reference files (genome), and -b asks for .bam output
+	
+	samtools sort /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/align-data/$seq.bam -o /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/align-data/$seq.sorted.bam
+        samtools index -b /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/align-data/$seq.sorted.bam
+	#sort and index .bam files, and give .bam output (-b); name sorted file output as directed (-o)
+	
+        samtools rmdup /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/align-data/$seq.sorted.bam /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/align-data/$seq.nodups.bam
+        #remove PCR duplicates and name output files as directed
+	
+	samtools index -b /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/align-data/$seq.nodups.bam
+	#index no-PCR-duplicate .bam (-b) files
+	
+        samtools flagstat /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/align-data/$seq.nodups.bam > $seq.align.stats.txt
+	#calculate alignment statistics and write to new text file
 done
