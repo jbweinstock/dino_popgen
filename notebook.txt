@@ -32,7 +32,7 @@
 11/12/2021 7:00  - EF submitted batch script for bcftools filter and installed vcftools
 			NOTE: vcftools version 0.1.13 (used in original github) is ntot available on bioconda; installed 0.1.14
 11/12/2021 14:00 - JBW and EF met with Cory to resolve github push issues
-11/12/2021 15:00 = EF ran vcftools to filter out low-quality SNPs
+11/12/2021 15:00 - EF ran vcftools to filter out low-quality SNPs
 11/17/2021 13:00 - Group met w/ Carolyn & confirmed that .vcf output looked OK; JBW & EF tested out R code, confirmed that plots looked OK
 11/18/2021 10:00 - CLR ran PCADAPT (v. 4.3.3) for outlier detection on local device (will add files to HPC after comparing to Bayescan)
 		   CLR created Bayescan environment
@@ -45,4 +45,4 @@
 12/02/2021 15:45 - JBW updated .gitignore file
 12/03/2021 18:00 - JBW did a bunch of git adds/commits to get the majority of the log files onto github
 12/05/2021 15:45 - JBW commented scripts, EF moved explanatory text from jupyter notebook to README, CLF added figure 5 re-make
-
+12/05/2021 19:00 - CLR finished BayeScan outputs, updated scripts for SNP outlier analysis
