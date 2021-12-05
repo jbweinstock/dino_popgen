@@ -4,5 +4,7 @@ channels:
 dependencies:
   - bayescan=2.1
   - pcadapt=4.3.3
+  - vcfkit=0.2.9
+  - raxml-ng=0.9.0
 prefix: /vortexfs1/home/crzucidlo/.conda/envs/analyze_snps
 
