@@ -13,12 +13,15 @@
 
 #run from dino_popgen/ root directory
 #Gave 24 hrs for first run, failed after 7 hrs); 8 hrs for second (finished after 30 min); 2 hrs for 3rd...noticed 3 missing seqs)
-#USAGE: sbatch cleaning_scripts/load_seqs.txt cleaning_scripts/seq_access_nums.txt
-#USAGE v2: sbatch cleaning_scripts/load_seqs.txt cleaning_scripts/seq_access_nums_short.txt
-#USAGE v3: sbatch cleaning_scripts/load_seqs.txt cleaning_scripts/seq_access_missing.txt
-# NOTE: files have moved: need to update folder paths
+#USAGE: sbatch scripts/load_seqs.txt data/seq_access_nums.txt
+#USAGE v2: sbatch scripts/load_seqs.txt data/seq_access_nums_short.txt
+#USAGE v3: sbatch scripts/load_seqs.txt data/seq_access_missing.txt
+#NOTE: files have moved: may need to update folder paths!
 
-for seq in $(cat ${1})
+for seq in $(cat ${1}) #for each SRA accession number listed in provided text file
 do
 	fasterq-dump --split-3 --verbose -O data/sra/ $seq
+	#retrieve sequences, separating out single reads (--split-3) and putting lots of info into log file (--verbose)
+	#direct output (-O) to data/sra and name the file the seq SRA accession number
+	#REQUIRES sra-tools in active conda env; used v2.10.0 here
 done
