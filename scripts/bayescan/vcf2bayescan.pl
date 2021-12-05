@@ -1,5 +1,6 @@
 ## code taken from: https://github.com/santiagosnchez/vcf2bayescan/blob/master/vcf2bayescan.pl ##
 ## used in place of PGDSpider to create input file for Bayescan                                ##
+## only thing to change in usage below is the population file (host.txt below)                 ##
 ## usage: perl vcf2bayescan.pl -p host.txt -v allhqSNPmm80.recode.vcf                          ##
 
 use List::MoreUtils uniq;
