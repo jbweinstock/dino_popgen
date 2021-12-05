@@ -4,4 +4,4 @@ data/genome/
 output/align-data/
 output/trim-data/
 output/snp_calling/
-
+jupyter-notebooks/.ipynb_checkpoints
