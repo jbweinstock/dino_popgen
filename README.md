@@ -106,3 +106,17 @@ Code associated with this project, including all scripts used for data cleaning,
      - [EVIE SHOULD ENTER A BRIEF SUMMARY... ALSO SHOULD THIS BE IN ANALYSIS OUTPUT?]
    * seq_outliers/
      - _outliers identified by BayeScan and PCAdapt and outlier statistics_
+
+## Data Processing
+
+### Data Download
+Raw data from SRA Project PRJNA473816 was downloaded from NCBI (https://www.ncbi.nlm.nih.gov/bioproject/PRJNA473816/) using the fasterq-dump function from the sra-tools package (version 2.10.0). Only samples where colonization status of Symbiodinium was listed as "single" were selected for download, this was to prevent complications in data interpretation resulting from co-colonization in downstream analysis. These samples were identified by the "Colonization Status" field in the first supplemental table (S1) in the paper. The download script timed out on a large sequence (SRR7235983.fastq, 140 GB, total reads > 1.5 billion), this accession was excluded from our analysis due to size. All fastq files were zipped in order to save space on the HPC. The S. fitti reference genome was downloaded from dryad (https://doi.org/10.5061/dryad.xgxd254g8).  
+'''
+#following commands run in slurm script:
+
+for seq in $(cat ${1}) #input is a textfile with list of accession numbers
+do
+        fasterq-dump --split-3 --verbose -O data/sra/ $seq #retrieve SRA data
+done
+'''
+
