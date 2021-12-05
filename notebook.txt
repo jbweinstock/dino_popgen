@@ -44,4 +44,5 @@
 12/01/2021 13:30 - JBW moved lots of things from data/ to output/ following project instructions (sorry if this throws anyone off!!)
 12/02/2021 15:45 - JBW updated .gitignore file
 12/03/2021 18:00 - JBW did a bunch of git adds/commits to get the majority of the log files onto github
+12/05/2021 15:45 - JBW commented scripts, EF moved explanatory text from jupyter notebook to README, CLF added figure 5 re-make
 
