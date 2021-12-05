@@ -105,11 +105,4 @@ Code associated with this project, including all scripts used for data cleaning,
    * phylogeny/
      - [EVIE SHOULD ENTER A BRIEF SUMMARY... ALSO SHOULD THIS BE IN ANALYSIS OUTPUT?]
    * seq_outliers/
-     - _output from BayeScan:_ _fst.txt, .sel
-     - bayescan_outliers_clean.txt
-     - snp_under_sel_methods_OVERLAP.txt
-     - hostXloc_bayes_stats.txt
-     - host_bayes_stats.txt
-     - location_bayes_stats.txt
-     - outliersONLY_PCADAPT.txt
-     - PCADAPT_ALLvalues.txt
+     - _outliers identified by BayeScan and PCAdapt and outlier statistics_
