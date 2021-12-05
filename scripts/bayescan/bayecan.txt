@@ -12,9 +12,9 @@
 #export OMP_NUM_THREADS=16
 
 # run from dino_popgen/
-# uses BayeScan on files created using vcf2bayescan.pl
+# uses BayeScan on files created using vcf2bayescan.pl 
 # usage: scripts/bayescan/bayescan.txt
 
-scripts/bayescan/BayeScan2.1/binaries/BayeScan2.1_linux64bits output/seq_outliers/host.txt -snp -od output/seq_outliers/ -o host -out_pilot -out_freq
-scripts/bayescan/BayeScan2.1/binaries/BayeScan2.1_linux64bits output/seq_outliers/loc.txt -snp -od output/seq_outliers/ -o loc -out_pilot -out_freq
-scripts/bayescan/BayeScan2.1/binaries/BayeScan2.1_linux64bits output/seq_outliers/hostXloc.txt -snp -od output/seq_outliers/ -o hostXloc -out_pilot -out_freq
+scripts/bayescan/BayeScan2.1/binaries/BayeScan2.1_linux64bits scripts/bayescan/host.txt -snp -od output/seq_outliers/ -o host -out_pilot -out_freq
+scripts/bayescan/BayeScan2.1/binaries/BayeScan2.1_linux64bits scripts/bayescan/loc.txt -snp -od output/seq_outliers/ -o loc -out_pilot -out_freq
+scripts/bayescan/BayeScan2.1/binaries/BayeScan2.1_linux64bits scripts/bayescan/hostXloc.txt -snp -od output/seq_outliers/ -o hostXloc -out_pilot -out_freq
