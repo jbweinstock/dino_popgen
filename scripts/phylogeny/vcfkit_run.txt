@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#SBATCH --partition=scavenger
+#SBATCH --job-name=vcfkit
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=efachon@whoi.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=10G
+#SBATCH --time=00:01:00
+#SBATCH --output=vcfkit%j.log
+#export OMP_NUM_THREADS=1
+
+#run from dino_popgen/ root directory
+#gave 1 hrs & 10G mem
+#USAGE: sbatch scripts/phylogeny/vcfkit.txt 
+
+#generate multiple sequence alignment using multi-sample vcf file
+#Cory ran this since vcfkit wouldn't install in my environment
+vk phylo fasta /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/allhqSNPmm80_phylo.recode.vcf > /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/test.fasta
+#renamed test.fasta to phylogeny_msa.fasta
