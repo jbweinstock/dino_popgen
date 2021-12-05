@@ -13,10 +13,16 @@
 
 #run from dino_popgen/ root directory
 #gave 24 hrs & 180G mem
-#USAGE: sbatch scripts/align_seqs.txt scripts/load-seqs/seq_access_nums.txt 
+#USAGE: sbatch scripts/align_seqs.txt data/seq_access_nums.txt 
+#requires bwa in active conda env; use bwa 0.7.15 here
 
-for seq in $(cat ${1})
+bwa index /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitt_Apalm_v1.fa
+#construct index using (draft) reference genome -- necessary step before alignment
+
+for seq in $(cat ${1}) #for each sequence listed in provided text file
 do
-        bwa mem -t 16 /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/trim-data/${seq}_1_out.fasta.gz /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/trim-data/${seq}_2_out.fasta.gz > data/align-data/${seq}.sam 
+        bwa mem -t 16 /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/trim-data/${seq}_1_out.fasta.gz /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/trim-data/${seq}_2_out.fasta.gz > output/align-data/${seq}.sam 
+	#align paired trimmed sequences to draft genome and send output to output/align-data/
+	#bwa is slow! Important to multi-thread. Used 16 threads here (-t 16)
 done
 
