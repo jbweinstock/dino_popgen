@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#SBATCH --partition=scavenger
+#SBATCH --job-name=raxml_dino
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=efachon@whoi.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=40G
+#SBATCH --time=6:00:00
+#SBATCH --output=raxml%j.log
+#export OMP_NUM_THREADS=2
+
+#run from dino_popgen/ root directory
+#gave 6 hrs & 40G mem, ran in ~2.5 hours
+#USAGE: sbatch scripts/phylogeny/raxml_ng.txt 
+
+#parameters for raxml were pulled directly from the paper github
+raxml-ng --msa /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/test.fasta --model GTR+FO+G  --opt-branches on --opt-model on --tree pars{50},rand{50} --all  --bs-trees 100 --force --threads 2 --prefix /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/raxml_output
