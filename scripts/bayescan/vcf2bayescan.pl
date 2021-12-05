@@ -106,9 +106,9 @@ while(<VCF>){
 close VCF;
 local $| = 0;
 
-print "\nsaving to file: bayescan.txt\n";
+print "\nsaving to file: perl_output.txt\n";
 
-open(OUT, "> bayescan.txt");
+open(OUT, "> perl_output.txt");
 print OUT "[loci]=$al\n\n";
 print OUT "[populations]=",scalar(@upops),"\n\n";
 foreach(@upops){
