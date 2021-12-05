@@ -13,6 +13,12 @@
 
 #run from dino_popgen/ root directory
 #gave 24 hrs & 180G mem
-#USAGE: sbatch scripts/bcftools_view.txt 
+#USAGE: sbatch scripts/call_filter_snps/bcftools_view.txt 
+#requires bcftools (v1.9 here) in active conda env
 
-bcftools view -O v --threads 8 -m2 -M2 -v snps -o /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/snpview_symb_mpileup.vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/symb_mpileup.vcf
+bcftools view -O v --threads 8 -m2 -M2 -v snps -o /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/snpview_symb_mpileup.vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/symb_mpileup.vcf
+#
+#flag -O v asks for uncompressed vcf file output
+#flag --threads 8 allows program to multi-thread for improved computational efficiently
+#flags -m2 -M2 -v snps asks to only view biallelic SNPs
+#flag -o says to name output file as indicated
