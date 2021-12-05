@@ -13,10 +13,16 @@
 
 #run from dino_popgen/ root directory
 #gave 6 hrs & 10G mem
-#USAGE: sbatch scripts/trim.txt scripts/load-seqs/seq_access_nums.txt
+#USAGE: sbatch scripts/trim.txt data/seq_access_nums.txt
+#NOTE: files have moved, may need to alter file pathways!
 
-for seq in $(cat ${1})
+for seq in $(cat ${1}) #for each sequence listed in provided text file
 do
-	cutadapt -m 50 -q 25 --trim-n -o data/trim-data/${seq}_1_out.fasta.gz -p data/trim-data/${seq}_2_out.fasta.gz data/sra/${seq}_1.fastq.gz data/sra/${seq}_2.fastq.gz
+	cutadapt -m 50 -q 25 --trim-n -o output/trim-data/${seq}_1_out.fasta.gz -p output/trim-data/${seq}_2_out.fasta.gz data/sra/${seq}_1.fastq.gz data/sra/${seq}_2.fastq.gz
+	#trim seqs using cutadapt (v2.6 here) in active conda env
+	#discard reads shorter than 50 bp (-m 50)
+	#trim off low quality bases from 3' end (i.e. with a Phred score <25) (-q 25)
+	#trim N's on ends of reads (--trim-n)
+	#direct output (-o) to output/trim-data/ and include seq ID in filenames
 done
 
