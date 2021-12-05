@@ -14,5 +14,12 @@
 #run from dino_popgen/ root directory
 #gave 24 hrs & 180G mem
 #USAGE: sbatch scripts/bcftools_filter.txt 
+#requires bcftools (v1.9 here) in active conda env
 
-bcftools filter -i 'QUAL >= 200' --threads 8 -O v -o /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/HQ_snps.vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/snpview_symb_mpileup.vcf
+bcftools filter -i 'QUAL >= 200' --threads 8 -O v -o /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/HQ_snps.vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/snpview_symb_mpileup.vcf
+#filter out medium and low quality SNPs
+#flags/code pulled directly from paper github
+#flag -i 'QUAL >= 200' says to include only sites with quality scores equal to or greater than 200
+#flag --threads 8 allows multi-threading for computational efficiency
+#flag -O v calls for uncompressed vcf file output
+#flag -o names and directs output
