@@ -13,7 +13,15 @@
 
 #run from dino_popgen/ root directory
 #gave 24 hrs & 180G mem
-#USAGE: sbatch scripts/vcftools_filter.txt 
+#USAGE: sbatch scripts/vcftools_filter.txt
+#requires vcftools (v0.1.13 here) in active conda env
 
-vcftools --vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/HQ_snps_cp.vcf --max-missing 0.8 --kept-site --recode-INFO-all --out allhqSNPmm80
-vcftools --vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/HQ_snps_cp.vcf --bed /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/mm80_filter.bed --remove-indels --out mm80subset --recode --keep-INFO-all
+
+vcftools --vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/HQ_snps_cp.vcf --max-missing 0.8 --recode --remove-indels --out allhqSNPmm80
+#filters out sites with >20% missing data and indels
+#code/flags taken directly from paper github, excluding call to bed file (see README)
+#flag --vcf points to the vcf file to be processeds
+#flag --max-missing 0.8 says to exclude  pros missing more than 20% of data
+#flag --recode says to generate new file after filtering
+#flag --remove-indels says to exclude any sites that contain an indel
+#flag --out indicates what to name the output
