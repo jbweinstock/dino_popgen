@@ -17,7 +17,7 @@
 #requires bcftools (v1.9 here) in active conda env
 
 bcftools view -O v --threads 8 -m2 -M2 -v snps -o /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/snpview_symb_mpileup.vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/symb_mpileup.vcf
-#
+#identify SNPs
 #flag -O v asks for uncompressed vcf file output
 #flag --threads 8 allows program to multi-thread for improved computational efficiently
 #flags -m2 -M2 -v snps asks to only view biallelic SNPs
