@@ -204,7 +204,7 @@ Ultimately, vcfkit was installed successfully by an alternate HPC user (shoutout
 Outliers were identified using two different programs: BayeScan 2.1 and PCAdapt 4.3.3. This was the version of BayeScan used in the paper, however PCAdapt 4.0.3 was used in the paper. Between possible errors in the linux download of 4.0.3 and the availability of 4.3.3 on bioconda, we opted to use 4.3.3. To utilize BayeScan 2.1, you need to download it directly (cmpg.unibe.ch/software/BayeScan/download.html) and use one of the executable file based on your operating system.  
 #### PCAdapt
 To use PCAdapt, plug the .vcf file containing only high quality snps (created in the last step by vcf tools) into the PCAdapt R code provided.
-Outliers were defined as SNPs with qvalues less than 0.05 
+Outliers were defined as SNPs with qvalues less than 0.05. 
 ```
 # taken from jupyter-notebooks/PCAdapt_outliers.ipynb 
 # need entire code to run PCAdapt, this only shows the essential parts
@@ -216,6 +216,7 @@ length(outliers_pcadapt)
 ```
 #### BayeScan
 To create the input files need for BayeSxcan, I used a perl code from github (scripts/bayescan/vcf2bayescan.pl). _Note: this is *not* what is used in the paper to create this file._ Because we want the BayeScan file to take population into account when identifying selection outliers, both the .vcf file and a population map are required.
+Outliers were defined as SNPs with false discovery rates (FDR) less than 0.05.
 ```
 # usage of vcf2bayescan.pl
 # -p is the population file (change this depending on what population info you want to include), -v is the .vcf file
