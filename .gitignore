@@ -10,3 +10,5 @@ output/snp_calling/symb_mpileup.bcf
 output/snp_calling/symb_mpileup.vcf
 jupyter-notebooks/.ipynb_checkpoints
 .ipynb_checkpoints
+output/phylogeny/failed_approaches/
+scripts/phylogeny/failed_approaches/
