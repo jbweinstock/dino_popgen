@@ -196,7 +196,7 @@ raxml-ng --msa /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_cal
 * vcflib – Required individual-sample vcf files, output logfiles were all blank and unhelpful for troubleshooting. (https://github.com/vcflib/vcflib)
 * vcf2msa – This was a wrapper file downloaded from github, ran in python but also yielded bugs and incomplete documentation made it challenging to troubleshoot. (https://github.com/tkchafin/vcf2msa.py)
 * gatk4 – This approach was the most promising, as the FastaAlternateReferenceMaker function can take a vcf and create a fasta sequence for alignment. However, this approach required the final vcf to be split into individual sample vcfs and indexed. Significant time was spent getting gatk to work (initial installation trouble, then loaded the gatk module directly from HPC, then realized that we actually needed gatk4 to access FastaAlternateReferenceMaker which needed to be downloaded from bioconda). While we were able to generate final fasta files for each sample using this approach, the resulting files used the entire original reference, making them millions of base pairs long and not appropriate for use in alignment. 
-* vcftools consensus – Similar to gatk, this output was not actually what we were looking for.
+* vcftools consensus – Similar to gatk, this output was not actually what we were looking for.  
 Ultimately, vcfkit was installed successfully by an alternate HPC user (shoutout to Cory Berger!) and vcfkit was run to create the fasta file for alignment. 
 
 ### SNPs under selection
