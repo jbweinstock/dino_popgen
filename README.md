@@ -164,7 +164,30 @@ do
 done
 ```
 Samtools and bcftools (both version 1.4.1) were installed and used to further process the sequences.  
-Samtools view was used to convert sam files to bam format in order to save space on the HPC. Then, the .bam files were sorted and indexed so the PCR duplicates could be removed with samtools rmdup. Now that duplicates are removed, this .bam file was used in downstream analyses. Additionlly, the .bam files were indexed again and samtools flagstat used to calculate alignment statistics. *Add part about python code to run through stats?*
+Samtools view was used to convert sam files to bam format in order to save space on the HPC. Then, the .bam files were sorted and indexed so the PCR duplicates could be removed with samtools rmdup. Now that duplicates are removed, this .bam file was used in downstream analyses. Additionlly, the .bam files were indexed again and samtools flagstat used to calculate alignment statistics.
+```
+# following commands run in scripts/samtools_seqs.txt
+# input is a textfile with list of accession numbers
+for seq in $(cat ${1}) #for each sequence in provided text file
+do
+  	samtools view -bT /vortexfs1/omics/env-bio/collaboration/dino_popgen/da$
+        #convert .sam to .bam files to save space on HPC
+        #flag -T refers to reference files (genome), and -b asks for .bam output
+
+        samtools sort /vortexfs1/omics/env-bio/collaboration/dino_popgen/output$
+        samtools index -b /vortexfs1/omics/env-bio/collaboration/dino_popgen/ou$
+        #sort and index .bam files, and give .bam output (-b); name sorted file$
+
+        samtools rmdup /vortexfs1/omics/env-bio/collaboration/dino_popgen/outpu$
+        #remove PCR duplicates and name output files as directed
+
+        samtools index -b /vortexfs1/omics/env-bio/collaboration/dino_popgen/ou$
+        #index no-PCR-duplicate .bam (-b) files
+
+        samtools flagstat /vortexfs1/omics/env-bio/collaboration/dino_popgen/ou$
+        #calculate alignment statistics and write to new text file
+done
+```
 ### SNP Calling and Filtering
 The samtools mpileup function was used to create a single pileup bcf file from all bam files. The resulting bcf file was run through bcftools call in order to call variants and produce a vcf output file. All flags used for these functions were documented clearly in the methods section of the paper.  
 ```
