@@ -31,21 +31,22 @@ Code associated with this project, including all scripts used for data cleaning,
      - _yaml file to load conda envs for SNP analysis_
  - figures
    * Fig2_JBW.pdf
-   * 
+   * Fig3_phylogeny_EF.pdf
    * Fig_5_manhattanplot_total.pdf
  - jupyter-notebooks/
-   * data-download.ipynb
-     - ...
+   * data_download # DELETE
    * dino_popgen_final_writeup.ipynb
-     - ...
+     - _a final comparison of reproduced results and original project_
    * trimlog_ext.ipynb
-     - ...
+     - _code to extract statistics out of trimming logfile_
    * BayeScan_outliers.ipynb
      - _R code to pull outliers from BayeScan output_
    * PCAdapt_outliers.ipynb
      - _R code to find outliers in .vcf file using PCAdapt AND compare BayeScan to PCAdapt_
    * figure-2_JBW.Rmd
      - _R code for (re-)creation of figure 2_
+   * figure-3_EF.ipynb
+     - _python code used to format final treefile for visualization with iTOL_
    * figure-5_CLR.Rmd
      - _R code for (re-)creation of figure 5_
  - logs/
@@ -61,24 +62,28 @@ Code associated with this project, including all scripts used for data cleaning,
      - _script to trim sequences using cutadapt_
    * call_filter_snps/
      - mpileup.txt
+       * _create a mpileup file with all samples_
      - bcftools_run.txt
-     - bcftools_filter.txt
+       * _call variants_
      - bcftools_view.txt
-     - vcftools_filter.txt
+       * _identify snps_
+     - bcftools_filter.txt
+       * _filter out low and medium quality SNPs_
+     - vcftools_filter.tx
+       * _filter out sites with >20% missing data_
    * samtools_seqs.txt
      - _convert .sam files to .bam, remove PCR duplicates, and get alignment stats_
-   * mpileup.txt
-   * snp_id.txt
+   * snp_id.txt #MOVE TO CALL/FILTER AND DELETE MPILEUP.TXT AND BCFTOOLS_RUN.TXT
+     - _code to create pileup file and call variants_
    * align_seqs.txt
      - _script to align trimmed seqs to draft genome_
    * phylogeny/
      - vcftools_filter_phylo.txt
-     - vcftools_consensus.txt
-     - vcf2msa/
-       * vcf2msa.py
-       * mpileup_all.txt
-       * mpileup_all_*.log [SHOULD PROBS MOVE TO LOGS FOLDER]
-       * vcf2msa_run.txt
+       * _rerun filtering step to subset only sites with NO missing data_
+     - vcfkit_run.txt
+       * _vcf to fasta alignment_
+     - raxml_ng.txt
+       * _run bootstrapping and create tree_
    * bayescan/
      - BayeScan2.1/
        * _run BayeScan from this folder_
@@ -103,7 +108,8 @@ Code associated with this project, including all scripts used for data cleaning,
    * snp_calling/
      - _SNP data (output from bcftools)_
    * phylogeny/
-     - [EVIE SHOULD ENTER A BRIEF SUMMARY... ALSO SHOULD THIS BE IN ANALYSIS OUTPUT?]
+     - _fasta alignment and raxml output_
+     - [ALSO SHOULD THIS BE IN ANALYSIS OUTPUT?]
    * seq_outliers/
      - _outliers identified by BayeScan and PCAdapt and outlier statistics_
 
@@ -112,7 +118,8 @@ Code associated with this project, including all scripts used for data cleaning,
 ### Data Download
 Raw data from SRA Project PRJNA473816 was downloaded from NCBI (https://www.ncbi.nlm.nih.gov/bioproject/PRJNA473816/) using the fasterq-dump function from the sra-tools package (version 2.10.0). Only samples where colonization status of Symbiodinium was listed as "single" were selected for download, this was to prevent complications in data interpretation resulting from co-colonization in downstream analysis. These samples were identified by the "Colonization Status" field in the first supplemental table (S1) in the paper. The download script timed out on a large sequence (SRR7235983.fastq, 140 GB, total reads > 1.5 billion), this accession was excluded from our analysis due to size. All fastq files were zipped in order to save space on the HPC. The S. fitti reference genome was downloaded from dryad (https://doi.org/10.5061/dryad.xgxd254g8).  
 ```
-#following commands run in slurm script:
+#following commands run scripts/load_seqs.txt:
+#input data/seq_access_nums.txt
 
 for seq in $(cat ${1}) #input is a textfile with list of accession numbers
 do
@@ -122,6 +129,7 @@ done
 ### Cleaning and Trimming
 The cutadapt package (version 2.6) was used to trim and clean reads. This process was well-specified for the methods related to reference genome assembly in the paper, but not for individual samples; methods outlined for the reference genome were followed as closely as possible. Cutadapt 1.6 was specified in the paper but was not available through Bioconda, we decided to download the latest version.
 ```
+#following commands run in scripts/trim.txt
 for seq in $(cat ${1}) #input is a textfile with list of accession numbers
 do
         cutadapt -m 50 -q 25 --trim-n -o data/trim-data/${seq}_1_out.fasta.gz -p data/trim-data/${seq}_2_out.fasta.gz data/sra/${seq}_1.fastq.gz data/sra/${seq}_2.fastq.gz #trim n's, phred score threshold of 25, minimum length of 50 bp
@@ -131,6 +139,7 @@ At this point it was discovered that one of the sequences (SRR7235991) did not d
 ### Alignment
 The Burrows-Wheeler Aligner (BWA) package (version 0.7.15) was used to index the reference genome and align the sequences. Alignment was run with the bwa mem function on 16 threads.
 ```
+#following commands run in scripts/align_seqs.txt
 bwa index /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa #index reference
 #align each sample file, 16 threads
 for seq in $(cat ${1})
@@ -143,6 +152,7 @@ Samtools view was used to convert sam files to bam format in order to save space
 ### SNP Calling and Filtering
 The samtools mpileup function was used to create a single pileup bcf file from all bam files. The resulting bcf file was run through bcftools call in order to call variants and produce a vcf output file. All flags used for these functions were documented clearly in the methods section of the paper.  
 ```
+#following commands run in snp_id.txt
 #create a bcf pileup
 samtools mpileup -ugAEf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa -t AD,DP /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/align-data/*.bam > /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/symb_mpileup.bcf
 #call variants
@@ -150,10 +160,13 @@ bcftools call -f GQ -vmO z --ploidy 1 -o symb_mpileup.vcf.gz /vortexfs1/omics/en
 ```
 At this point, we tried to run bcftools view to identify snps but the program threw an error when loading shared libraries. We chose to update bcftools to the current version (1.9) to proceed. The output of bcftools view was run with bcftools filter function in order to isolate only the high-quality variants (quality score >200). An additional filtering step was conducted with vcftools filter, which removed all sites with >20% missing data as well as indels. While flags related to bcftools were noted in the paper, the vcftools operation was not documented in the manuscript. The github repository included information on the vcftools operations, however the version noted in the github (0.1.13) was not available through bioconda so we opted to download the next available version (0.1.14). Interestingly, the github also included a bed file to be used with vcftools, but there was no documentation on how these files were created. After consultation, we decided to move forward without the bed file, as it seemed its primary purpose was to mask out coinfected S. fitti, which we had already subsetted out early in our analysis process.  
 ```
+#following command run in bcftools_view.txt
 #identify snps
 bcftools view -O v --threads 8 -m2 -M2 -v snps -o /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/snpview_symb_mpileup.vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/symb_mpileup.vcf
+#following command run in bcftools_filter.txt
 #filter out medium and low-quality snps
 bcftools filter -i 'QUAL >= 200' --threads 8 -O v -o /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/HQ_snps.vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/snpview_symb_mpileup.vcf
+#following command run in vcftools_filter.txt
 #filter out sites with >20% missing data and indels
 vcftools --vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/HQ_snps_cp.vcf --max-missing 0.8 --recode --remove-indels --out allhqSNPmm80
 ```
