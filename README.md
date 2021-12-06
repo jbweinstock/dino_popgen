@@ -99,6 +99,8 @@ Code associated with this project, including all scripts used for data cleaning,
        * _perl code to convert vcf file into a BayeScan file using a population map_
        * _taken from <https://github.com/santiagosnchez/vcf2bayescan/blob/master/vcf2bayescan.pl>_
      - _vcf2bayescan.pl output:_ host.txt, loc.txt, hostXloc.txt
+   * supp_table_prep.R
+     - _R script for subsetting and re-ordering supplemental table_
    * proc_for_vcf-seq-order.txt
      - _text file explaining bash and R code used to subset and re-order metadata table to match sample order in allhqSNPmm80.recode.vcf_
    * _code for PCA analysis and figure in jupyter-notebooks/figure-2_JBW.Rmd_
@@ -215,7 +217,114 @@ The final vcf file contained 57,800 loci, closely matching the 58,000 that were 
 
 ### PCA
 
-[JANE ADD HERE]	
+Analysis was conducted on SNP data in allhqSNPmm80.recode.vcf in R, after reformatting the metadata file so that sample orders matched exactly between files. Metadata reformatting was achieved with a mix of bash and R code (described in scripts/proc_for_vcf-seq-order.txt and scripts/supp_table_prep.R, summarized here):
+
+```
+# bash
+grep CHROM allhqSNPmm80.recode.vcf | tr [:space:] '\n' > [INTERMEDIATE-FILE]
+        # pull out sample names from vcf file and put those in a list in new file
+
+#manually remove top few lines, so that first line is sample name
+
+cut -d '/' -f9 vcf_chrom_head.txt | cut -d '.' -f1 > vcf_seq_order.txt
+        # cut out just SRR numbers and print those to new text file
+
+# R
+seq_order = read.csv("vcf_seq_order.txt",sep='\n',header=F) #read in text file
+seq_order$index = seq(1:47) #add index column and numbers
+
+Supp_tab_1 <- read.csv("supp_table_1.csv", na.strings = c("n.a.","")) #read in original supp. table file
+
+Supp_tab_1_single <- subset.data.frame(Supp_tab_1, Supp_tab_1$Colonization_Status == "single")
+  # remove any samples with colonization status of "multiple" or "incomplete"
+
+Supp_tab_1_47 <- subset.data.frame(Supp_tab_1_single, Supp_tab_1_single$total_reads < 80000000)
+  # remove the 2 samples with 10x the total reads
+
+colnames(Supp_tab_1_47)[1] = "Sample_ID" #fix column name
+
+write.csv(Supp_tab_1_47, file = "supp_table_subset.csv",row.names = F) #write subsetted table
+
+poptab <- read.csv("supp_table_subset.csv") #load in the subsetted table
+
+poptab$index = NA #create empty index column in subsetted metadata file
+for (i in 1:47){ #for all rows in metadata
+        for (k in 1:47){ #for all sequences in list
+                if(poptab$NCBI_SRA_Accesion[i]==seq_order$V1[k]){ #if the sample IDs match...
+                        poptab$index[i] = seq_order$index[k] #...assign the sequence index number
+                }
+	}
+}
+
+poptab_ordered = poptab[order(poptab$index),] #re-order csv by vcf-derived index number
+
+write.csv(poptab_ordered, file = "supp_table_ordered.csv",row.names = F) #write subsetted table
+```
+
+After metadata table was reformatted, anlaysis was conducted in R. Figure code is reported in full in jupyter_notebooks/figure-2_JBW.Rmd, but below is a summary:
+
+```
+# load all necessary libraries -- versions not specified
+library(reshape2)
+library(pcadapt)
+library(cowplot)
+library(ggplot2)
+library(ggpubr)
+library(vcfR)
+
+# import data
+poptab <- read.csv("supp_table_ordered.csv")
+path <- "allhqSNPmm80.recode.vcf"
+vcf <- read.pcadapt(path, type = "vcf", type.out = "matrix", ploidy = 1)
+	# NOTE: ploidy argument has been deprecated, but code still ran
+
+# run pcadapt
+acp <- pcadapt(input = vcf, K = 5)
+
+# spit out % variance... JBW gets PC1 = 15.7% and PC2 = 12.2%
+acp$singular.values
+
+# wrangle into new dataframe
+df1 <- data.frame(Species = poptab$Host_Species, Loc = poptab$Population, 
+                  ID = poptab$VCF_ID, pca = pca$data)
+all_pca <- as.data.frame(df1)
+
+# assign colors to match paper
+cols2 = c("#000000","#999999","#0072B2")
+
+# make plot
+ggplot(all_pca, aes(x=pca.PC_i, y=pca.PC_j)) + #JBW moved x and y into general ggplot aesthetic
+  geom_point(aes(color = Species, 
+                 fill = Species,
+                 shape = Loc),
+             size = 4, 
+             alpha = 0.85) +
+  scale_shape_manual(values = c(25,16,17,15,23), 
+                     breaks = c("Bahamas", "Belize", "Curacao", "Florida", "US Virgin Islands"), 
+                     labels = c("Bahamas", "Belize", "Curacao", "Florida", "US Virgin Islands"), 
+                     name = "Location") +
+  scale_color_manual(values = cols2, 
+                     breaks = c("A. cervicornis", "Hybrid", "A. palmata"),
+                     labels = c("A. cervicornis", "Hybrid", "A. palmata"),
+                     name = "S. 'fitti' host") +
+  theme_classic2() +
+  ylim(0.4, -0.4) + #JBW had to reverse the y-axis to get the spatial layout to match
+  theme(legend.position = "right",
+        axis.title = element_text(face = "bold", size = 14),
+        plot.title = element_text(face = "bold"),
+        legend.title = element_text(face = "bold"),
+        panel.grid = element_blank(),
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) + 
+  stat_ellipse(geom = "polygon", type = "t", alpha = 0.25, 
+               aes(fill= Species), 
+               show.legend = FALSE) + 
+ scale_fill_manual(values = cols2, 
+                    breaks = c("A. cervicornis", "Hybrid", "A. palmata"),
+                    labels = c("A. cervicornis", "Hybrid", "A. palmata"),
+                    name = "S. 'fitti' host") +
+  labs(title = "57,810 'genotyping' S. fitti SNPs", x="PC1 (15.7% variance)", y="PC2 (12.2% variance)")
+```
 
 ### Phylogeny
 SNPs were filtered with vcftools to subset only the locations with complete coverage across samples (allhqSNPmm80_phylo_recode.vcf, 5658 SNPs in total). In order to generate a fasta alignment for use in phylogenetic analysis, vcfkit phylo (version 0.2.9) was used to extract all SNPs from the vcf file and generate an alignment from the variant calls (phylogeny_msa.fasta). RAxML-NG (version 0.9.0) was run to identify the optimal maximum likelihood tree. Parameters used with RAxML (GTR+FO+G nucleotide model, 100 bootstraps)) were pulled directly from the Reich et al. paper github. Project metadata was used to match the NCBI identifiers to the actual sample names (documented in jupyter notebook figure-3_EF.ipynb), and then the best tree identified in RAxML was visualized using iTOL (https://itol.embl.de/) and exported in both pdf and newick text format.
