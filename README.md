@@ -163,16 +163,34 @@ The final vcf file contained 57,800 loci, closely matching the 58,000 that were 
 
 ### SNPs under selection
 
-Outliers were identified using two different programs: BayeScan 2.1 and PCAdapt 4.3.3. This was the version of BayeScan used in the paper, however PCAdapt 4.0.3 was used in the paper. Between possible errors in the linux download of 4.0.3 and the availability of 4.3.3 on bioconda, we opted to use 4.3.3. 
+Outliers were identified using two different programs: BayeScan 2.1 and PCAdapt 4.3.3. This was the version of BayeScan used in the paper, however PCAdapt 4.0.3 was used in the paper. Between possible errors in the linux download of 4.0.3 and the availability of 4.3.3 on bioconda, we opted to use 4.3.3. To utilize BayeScan 2.1, you need to download it directly (cmpg.unibe.ch/software/BayeScan/download.html) and use one of the executable file based on your operating system.  
 #### PCAdapt
-PCAdapt was very straightforward between the documentation in the methods and the R script on github. When our .vcf file was plugged into the PCAdapt R code, it produced 5,654 SNPs under selection, compared to 4,987 determined in the paper. Because we removed deep sequenced file from our dataset, PCAdapt may have identified SNP outliers that would not have been identified if that deep sequenced sample was in the analysis. However, the SNPs under selection reported by PCAdapt were relatively similar despite the differences in processing that may have arisen between the two analyses. 
-
-_See jupyter-notebooks/PCAdapt_outliers.ipynb for full code_
+To use PCAdapt, plug the .vcf file containing only high quality snps (created in the last step by vcf tools) into the PCAdapt R code provided.
+Outliers were defined as SNPs with qvalues less than 0.05 
+'''
+# taken from jupyter-notebooks/PCAdapt_outliers.ipynb 
+# need entire code to run PCAdapt, this only shows the essential parts
+pc <- pcadapt(input = vcf, K = 10)
+qval <- qvalue(pc$pvalues)$qvalues
+alpha <- 0.05
+outliers_pcadapt <- which(qval < alpha)
+length(outliers_pcadapt)
+'''
 #### BayeScan
-The outlier analysis using BayeScan proved to be more difficult. Although information was provided in the paper (version numbers, default settings) and the code was provided for the actual analysis, there was little information on how to get the input files for BayeScan. The author used PGDSpider to create a BayeScan file from the .vcf produced in the identifying SNPs step, but that was all the information provided. There was nothing on how to use PGDSpider, whether the GUI or command line version was used, and what files were used to take population information (host, location, and the interaction between the two) into account when creating these bayescan input files. After using PGDSpider GUI, PGDSpider on the command line, and an R package (radiator) all without success, I used a perl code from github (scripts/bayescan/vcf2bayescan.pl) to create the BayeScan input file. This correctly identified population information and the structure of the file looked as it should. Because of this (and that it worked with BayeScan) I assume that the file was very similar to that which was created for the paper by PGDSpider. 
+To create the input files need for BayeSxcan, I used a perl code from github (scripts/bayescan/vcf2bayescan.pl). _Note: this is *not* what is used in the paper to create this file._ Because we want the BayeScan file to take population into account when identifying selection outliers, both the .vcf file and a population map are required.
+'''
+# usage of vcf2bayescan.pl
+# -p is the population file (change this depending on what population info you want to include), -v is the .vcf file
+perl vcf2bayescan.pl -p host.txt -v allhqSNPmm80.recode.vcf
+''' 
 
-Once the input files were created, I ran BayeScan three separate times, once where information on the host species was included, once where the location of the sample was included, and once where the interaction of the two was included. Because there was not information on how the interaction was identified, I put simply put host species and location together into one category, creating 11 different 'populations.'
+Once the input files are created, run BayeScan one time for each population file. Here, we ran one where information on the host species was included, one where the location of the sample was included, and one where the interaction of the two was included. Remember to change the path to BayeScan to match where your files are downloaded.
+'''
+# input host file as population info
+scripts/bayescan/BayeScan2.1/binaries/BayeScan2.1_linux64bits scripts/bayescan/host.txt -snp -threads 16 -od output/seq_outliers/ -o host -out_pilot -out_freq
+# input location file as population info
+scripts/bayescan/BayeScan2.1/binaries/BayeScan2.1_linux64bits scripts/bayescan/loc.txt -snp -threads 16 -od output/seq_outliers/ -o loc -out_pilot -out_freq
+# input interaction of host and location file as population info
+scripts/bayescan/BayeScan2.1/binaries/BayeScan2.1_linux64bits scripts/bayescan/hostXloc.txt -snp -threads 16 -od output/seq_outliers/ -o hostXloc -out_pilot -out_freq
+''' 
 
-My BayeScan output identified 386 outliers when accounting for host, 33 when accounting for location, and 273 when accounting for the interaction of host and location. Between our two analyses, 360 SNPs overlapped between them. All of these outputs were slightly higher than the results of the paper, which had 217 outliers identified when accounting for host, 5 for location, 197 for the interaction, and 339 SNPs overlapping between BayeScan and PCAdapt. Again, I suspect this is the result of missing SNPs present in the deeply sequenced sample. In addition, I cannot confirm that there is no difference in the way the author created her BayeScan files vs. how I created them, possibly causing some differences. 
-
-_See jupyter-notebooks/BayeScan_outliers.ipynb for full code_
