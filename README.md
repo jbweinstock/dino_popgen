@@ -128,7 +128,7 @@ do
 done
 ```
 At this point it was discovered that one of the sequences (SRR7235991) did not download properly during the initial fasterq-dump; this sequence was redownloaded and trimmed separately. A python script was used to extract some relevant statistics from the trim log. The average percent of pairs written was 98.7%, and number of pairs written ranged from ~10 million to ~39 million.  
-#### Alignment
+### Alignment
 The Burrows-Wheeler Aligner (BWA) package (version 0.7.15) was used to index the reference genome and align the sequences. Alignment was run with the bwa mem function on 16 threads.
 ```
 bwa index /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/genome/Sfitti_Apalm_v1.fa #index reference
@@ -139,7 +139,7 @@ do
 done
 ```
 Samtools and bcftools (both version 1.4.1) were installed and used to further process the sequences.  
-Samtools view was used to convert sam files to bam format in order to save space on the HPC. Then, the .bam files were sorted and indexed so the PCR duplicates could be removed with samtools rmdup. Now that duplicates are removed, this .bam file was used in downstream analyses. Additioanlly, the .bam files were indexed again and samtools flagstat used to calculate alignment statistics. *Add part about python code to run through stats?*
+Samtools view was used to convert sam files to bam format in order to save space on the HPC. Then, the .bam files were sorted and indexed so the PCR duplicates could be removed with samtools rmdup. Now that duplicates are removed, this .bam file was used in downstream analyses. Additionlly, the .bam files were indexed again and samtools flagstat used to calculate alignment statistics. *Add part about python code to run through stats?*
 ### SNP Calling and Filtering
 The samtools mpileup function was used to create a single pileup bcf file from all bam files. The resulting bcf file was run through bcftools call in order to call variants and produce a vcf output file. All flags used for these functions were documented clearly in the methods section of the paper.  
 ```
@@ -159,4 +159,7 @@ vcftools --vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calli
 ```
 The final vcf file contained 57,800 loci, closely matching the 58,000 that were identified in the paper. One reason that we may have identified less snps than the manuscript is that we chose to omit a single large file from our analysis. These final SNPs were used as inputs for the respective downstream analyses.
 
+## Analyses
 
+###SNPs under selection
+Outliers were identified using two different programs: BayeScan 2.1 and PCAdapt 4.3.3. This was the version of BayeScan used in the paper, however PCAdapt 4.0.3 was used in the paper. Between possible errors in the linux download of 4.0.3 and the availability of 4.3.3 on bioconda, we opted to use 4.3.3. PCAdapt was very straightforward between the documentation in the methods and the R script on github. When our .vcf file was plugged into the PCAdapt R code, it produced 5,654 SNPs under selection, compared to 4,987 determined in the paper. Because we removed deep sequenced file from our dataset, PCAdapt may have identified SNP outliers that would not have been identified if that deep sequenced sample was in the analysis. However, the SNPs under selection reported by PCAdapt were relatively similar despite the differences in processing that may have arisen between the two analyses. The outlier analysis using BayeScan proved to be more difficult. Although information was provided in the paper (version numbers, default settings) and the code was provided for the actual analysis, there was little information on how to get the input files for BayeScan. The author used PGDSpider to create a BayeScan file from the .vcf produced in the identifying SNPs step, but that was all the information provided. There was nothing on how to use PGDSpider, whether the GUI or command line version was used, and what files were used to take population information (host, location, and the interaction between the two) into account when creating these bayescan input files. After using PGDSpider GUI, PGDSpider on the command line, and an R package (radiator) all without success, I used a perl code from github (vcf2bayescan.pl) to create the BayeScan input file. This correctly identified population information and the structure of the file looked as it should. Because of this (and that it worked with BayeScan) I assume that the file was very similar to that which was created for the paper by PGDSpider. Once the input files were created, I ran BayeScan three separate times, once where information on the host species was included, once where the location of the sample was included, and once where the interaction of the two was included. Because there was not information on
