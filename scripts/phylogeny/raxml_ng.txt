@@ -17,3 +17,13 @@
 
 #parameters for raxml were pulled directly from the paper github
 raxml-ng --msa /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/snp_calling/test.fasta --model GTR+FO+G  --opt-branches on --opt-model on --tree pars{50},rand{50} --all  --bs-trees 100 --force --threads 2 --prefix /vortexfs1/omics/env-bio/collaboration/dino_popgen/output/phylogeny/raxml_output
+#flag --msa input fasta alignment for analysis
+#flag --model GTR+FO+G specify nucleotide model
+#flag --opt-branches enable branch length optimization
+#flag --opt-model enable model parameter optimization
+#flag --tree specify 50 starting trees
+#flag --all run ML and bootstrap
+#flag --bs-trees specify number of bootstrap replicates (100)
+#flag --force skip check
+#flag --threads specify two threads
+#flag --prefix specicy output folder
