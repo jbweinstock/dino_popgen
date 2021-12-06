@@ -31,12 +31,22 @@ Code associated with this project, including all scripts used for data cleaning,
      - _yaml file to load conda envs for SNP analysis_
  - figures
    * Fig2_JBW.pdf
+     - _results of PCA_
    * Fig3_phylogeny_EF.pdf
+     - _raw figure output from code_
+   * Fig3_phylogeny_EF_edit.png
+     - _prettied-up figure, to better match OG figure in paper_
    * Fig_5_manhattanplot_total.pdf
+     - _results of selection analysis_
+   * Fig2_original_Reich2021.png
+     - _original figure 2 (PCA) from Reich et al. 2021_
+   * Fig3_original_Reich2021.png
+     - original figure 3 (phylogeny) from Reich et al 2021_
+   * Fig5_original_Reich2021.png
+     - _original figure 5 (selection anlaysis) from Reich et al. 2021_
  - jupyter-notebooks/
-   * data_download # DELETE
    * dino_popgen_final_writeup.ipynb
-     - _a final comparison of reproduced results and original project_
+     - _the final comparison of reproduced results and original project_
    * trimlog_ext.ipynb
      - _code to extract statistics out of trimming logfile_
    * BayeScan_outliers.ipynb
@@ -52,31 +62,27 @@ Code associated with this project, including all scripts used for data cleaning,
  - logs/
    * _log files from HPC sbatch runs_
  - scripts/
-   * load-seqs/
-     - load_seqs.txt # MIGHT MOVE INTO MAIN FOLDER
-     - seq_access_missing.txt #	MIGHT DELETE
-     - seq_access_nums_short.txt # MIGHT DELETE
+   * load_seqs.txt
+     - _script to download raw seqs from NCBI, using data/seq_access_nums.txt_
    * zip.txt
      - _script to zip files so they take up less space_
    * trim.txt
      - _script to trim sequences using cutadapt_
+   * align_seqs.txt
+     - _script to align trimmed seqs to draft genome_
+   * samtools_seqs.txt
+     - _convert .sam files to .bam, remove PCR duplicates, and get alignment stats_
    * call_filter_snps/
      - mpileup.txt
-       * _create a mpileup file with all samples_
+       * _create mpileup file with all samples_
      - bcftools_run.txt
        * _call variants_
      - bcftools_view.txt
-       * _identify snps_
+       * _identify SNPs_
      - bcftools_filter.txt
        * _filter out low and medium quality SNPs_
      - vcftools_filter.tx
        * _filter out sites with >20% missing data_
-   * samtools_seqs.txt
-     - _convert .sam files to .bam, remove PCR duplicates, and get alignment stats_
-   * snp_id.txt #MOVE TO CALL/FILTER AND DELETE MPILEUP.TXT AND BCFTOOLS_RUN.TXT
-     - _code to create pileup file and call variants_
-   * align_seqs.txt
-     - _script to align trimmed seqs to draft genome_
    * phylogeny/
      - vcftools_filter_phylo.txt
        * _rerun filtering step to subset only sites with NO missing data_
@@ -91,9 +97,11 @@ Code associated with this project, including all scripts used for data cleaning,
        * _IDs SNP outliers based on population information_
      - vcf2bayescan.pl
        * _perl code to convert vcf file into a BayeScan file using a population map_
+       * _taken from <https://github.com/santiagosnchez/vcf2bayescan/blob/master/vcf2bayescan.pl>_
      - _vcf2bayescan.pl output:_ host.txt, loc.txt, hostXloc.txt
    * proc_for_vcf-seq-order.txt
      - _text file explaining bash and R code used to subset and re-order metadata table to match sample order in allhqSNPmm80.recode.vcf_
+   * _code for PCA analysis and figure in jupyter-notebooks/figure-2_JBW.Rmd_
 - output/
    * supp_table_subset.csv
      - _Supp table 1, subset with only the 47 samples re-analyzed here_
@@ -106,10 +114,18 @@ Code associated with this project, including all scripts used for data cleaning,
    * align-data/
      - _aligned sequences (.bam files) (after bwa run)_
    * snp_calling/
-     - _SNP data (output from bcftools)_
+     - allhqSNPmm80.recode.vcf
+       * _final data file for high-quality SNPS, allowing for missing data_
+     - _additoinal SNP data files (output from bcftools), not included on github due to file size_
    * phylogeny/
-     - _fasta alignment and raxml output_
-     - [ALSO SHOULD THIS BE IN ANALYSIS OUTPUT?]
+     - phylogeny_msa.fasta
+       * _fasta alignment_
+     - allhqSNPmm80_phylo.recode.vcf
+       * _final data file for high-quality SNPS, allowing for NO missing data_
+     - raxml_output/
+       * _output from raxml run_
+       * raxml_output.raxml.support 
+         - file used in creation of Figure 3 (figure-3_EF.ipynb)
    * seq_outliers/
      - _outliers identified by BayeScan and PCAdapt and outlier statistics_
 
@@ -173,6 +189,10 @@ vcftools --vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calli
 The final vcf file contained 57,800 loci, closely matching the 58,000 that were identified in the paper. One reason that we may have identified less snps than the manuscript is that we chose to omit a single large file from our analysis. These final SNPs were used as inputs for the respective downstream analyses.
 
 ## Analyses
+
+### PCA
+
+[JANE ADD HERE]	
 
 ### Phylogeny
 *The short story:* SNPs were filtered with vcftools to subset only the locations with complete coverage across samples (allhqSNPmm80_phylo_recode.vcf, 5658 SNPs in total). In order to generate a fasta alignment for use in phylogenetic analysis, vcfkit phylo (version 0.2.9) was used to extract all SNPs from the vcf file and generate an alignment from the variant calls (phylogeny_msa.fasta). RAxML-NG (version 0.9.0) was run to identify the optimal maximum likelihood tree. Parameters used with RAxML (GTR+FO+G nucleotide model, 100 bootstraps)) were pulled directly from the Reich et al. paper github. Project metadata was used to match the NCBI identifiers to the actual sample names (documented in jupyter notebook figure-3_EF.ipynb), and then the best tree identified in RAxML was visualized using iTOL (https://itol.embl.de/) and exported in both pdf and newick text format.
