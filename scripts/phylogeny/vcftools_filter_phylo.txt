@@ -17,3 +17,10 @@
 
 #use vcftools to filter out only snps with no missing data from the high quality SNP file
 vcftools --vcf /vortexfs1/omics/env-bio/collaboration/dino_popgen/data/snp_calling/HQ_snps_cp.vcf --max-missing 1.0 --recode --remove-indels --out allhqSNPmm80_phylo
+#filters out sites with no missing data
+#code/flags taken directly from paper github, excluding call to bed file (see README)
+#flag --vcf points to the vcf file to be processeds
+#flag --max-missing 1.0 says to exclude  pros missing any data
+#flag --recode says to generate new file after filtering
+#flag --remove-indels says to exclude any sites that contain an indel
+#flag --out indicates what to name the output
