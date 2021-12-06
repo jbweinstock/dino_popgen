@@ -19,6 +19,20 @@ IN R....
 
 	seq_order = read.csv("vcf_seq_order.txt",sep='\n',header=F)
 	seq_order$index = seq(1:47)
+	
+	Supp_tab_1 <- read.csv("supp_table_1.csv", na.strings = c("n.a.","")) #read in original supp. table file
+
+	Supp_tab_1_single <- subset.data.frame(Supp_tab_1, Supp_tab_1$Colonization_Status == "single")
+	  # remove any samples with colonization status of "multiple" or "incomplete"
+
+	Supp_tab_1_47 <- subset.data.frame(Supp_tab_1_single, Supp_tab_1_single$total_reads < 80000000)
+	  # remove the 2 samples with 10x the total reads
+
+	colnames(Supp_tab_1_47)[1] = "Sample_ID" #fix column name
+
+	write.csv(Supp_tab_1_47, file = "supp_table_subset.csv",row.names = F) #write subsetted table
+
+	poptab <- read.csv("supp_table_subset.csv") #load in the subsetted table
 
 	poptab$index = NA
 	for (i in 1:47){
