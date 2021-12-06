@@ -167,7 +167,7 @@ Outliers were identified using two different programs: BayeScan 2.1 and PCAdapt 
 #### PCAdapt
 To use PCAdapt, plug the .vcf file containing only high quality snps (created in the last step by vcf tools) into the PCAdapt R code provided.
 Outliers were defined as SNPs with qvalues less than 0.05 
-'''
+```
 # taken from jupyter-notebooks/PCAdapt_outliers.ipynb 
 # need entire code to run PCAdapt, this only shows the essential parts
 pc <- pcadapt(input = vcf, K = 10)
@@ -175,22 +175,22 @@ qval <- qvalue(pc$pvalues)$qvalues
 alpha <- 0.05
 outliers_pcadapt <- which(qval < alpha)
 length(outliers_pcadapt)
-'''
+```
 #### BayeScan
 To create the input files need for BayeSxcan, I used a perl code from github (scripts/bayescan/vcf2bayescan.pl). _Note: this is *not* what is used in the paper to create this file._ Because we want the BayeScan file to take population into account when identifying selection outliers, both the .vcf file and a population map are required.
-'''
+```
 # usage of vcf2bayescan.pl
 # -p is the population file (change this depending on what population info you want to include), -v is the .vcf file
 perl vcf2bayescan.pl -p host.txt -v allhqSNPmm80.recode.vcf
-''' 
+``` 
 
 Once the input files are created, run BayeScan one time for each population file. Here, we ran one where information on the host species was included, one where the location of the sample was included, and one where the interaction of the two was included. Remember to change the path to BayeScan to match where your files are downloaded.
-'''
+```
 # input host file as population info
 scripts/bayescan/BayeScan2.1/binaries/BayeScan2.1_linux64bits scripts/bayescan/host.txt -snp -threads 16 -od output/seq_outliers/ -o host -out_pilot -out_freq
 # input location file as population info
 scripts/bayescan/BayeScan2.1/binaries/BayeScan2.1_linux64bits scripts/bayescan/loc.txt -snp -threads 16 -od output/seq_outliers/ -o loc -out_pilot -out_freq
 # input interaction of host and location file as population info
 scripts/bayescan/BayeScan2.1/binaries/BayeScan2.1_linux64bits scripts/bayescan/hostXloc.txt -snp -threads 16 -od output/seq_outliers/ -o hostXloc -out_pilot -out_freq
-''' 
+``` 
 
