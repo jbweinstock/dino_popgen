@@ -46,3 +46,6 @@
 12/03/2021 18:00 - JBW did a bunch of git adds/commits to get the majority of the log files onto github
 12/05/2021 15:45 - JBW commented scripts, EF moved explanatory text from jupyter notebook to README, CLF added figure 5 re-make
 12/05/2021 19:00 - CLR finished BayeScan outputs, updated scripts for SNP outlier analysis
+12/06/2021 11:00 - group meeting! discussed final conclusions, etc.
+12/06/2021 19:00 - The final push... Lots of edits to jupyter notebooks, file cleaning, etc. JBW added the Reich et al. (2021) paper to the github.
+
